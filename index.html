@@ -1,0 +1,2996 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>RatAI — Small Digital Tasks. Smart Solutions.</title>
+
+    <meta name="description"
+          content="RatAI provides affordable website fixes, CVs, LinkedIn makeovers, portfolio websites, business materials, AI-assisted digital services and more.">
+
+
+    <style>
+
+        /* =========================
+           GLOBAL
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        :root {
+
+            --background: #07090c;
+
+            --surface: #0d1117;
+
+            --surface-light: #121821;
+
+            --border: #202832;
+
+            --text: #f4f5f7;
+
+            --muted: #929ba8;
+
+            --red: #ff3347;
+
+            --red-dark: #c9142a;
+
+            --cyan: #62dfff;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+
+            background:
+
+                radial-gradient(
+                    circle at 80% 10%,
+                    rgba(255, 51, 71, 0.13),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 10% 70%,
+                    rgba(98, 223, 255, 0.06),
+                    transparent 28%
+                ),
+
+                var(--background);
+
+            color: var(--text);
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            line-height: 1.6;
+
+            overflow-x: hidden;
+
+        }
+
+
+        body::before {
+
+            content:
+                "RAT_AI://ONLINE   R4T_AI   SYSTEM_01   RAT.AI   RAT_AI://ONLINE";
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            opacity: 0.025;
+
+            font-family: monospace;
+
+            font-size: 13px;
+
+            line-height: 4;
+
+            letter-spacing: 3px;
+
+            transform:
+                rotate(-8deg)
+                scale(1.3);
+
+            z-index: 0;
+
+        }
+
+
+        a {
+
+            color: inherit;
+
+            text-decoration: none;
+
+        }
+
+
+        .container {
+
+            width: min(1150px, 92%);
+
+            margin: auto;
+
+            position: relative;
+
+            z-index: 1;
+
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+
+            height: 78px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            border-bottom:
+                1px solid rgba(255,255,255,0.06);
+
+        }
+
+
+        .logo {
+
+            font-size: 24px;
+
+            font-weight: 900;
+
+            letter-spacing: -1px;
+
+        }
+
+
+        .logo span {
+
+            color: var(--red);
+
+        }
+
+
+        .nav-links {
+
+            display: flex;
+
+            gap: 24px;
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+        }
+
+
+        .nav-links a {
+
+            transition: 0.2s ease;
+
+        }
+
+
+        .nav-links a:hover {
+
+            color: white;
+
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================= */
+
+        .button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 12px 20px;
+
+            border-radius: 9px;
+
+            border:
+                1px solid var(--border);
+
+            background: var(--surface);
+
+            font-weight: 700;
+
+            font-size: 14px;
+
+            transition: 0.2s ease;
+
+        }
+
+
+        .button:hover {
+
+            transform:
+                translateY(-2px);
+
+            border-color:
+                #39434f;
+
+        }
+
+
+        .button-primary {
+
+            background: var(--red);
+
+            border-color: var(--red);
+
+            box-shadow:
+                0 0 35px
+                rgba(255,51,71,0.18);
+
+        }
+
+
+        .button-primary:hover {
+
+            background: #ff4659;
+
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+
+            min-height: 650px;
+
+            display: grid;
+
+            grid-template-columns:
+                1.1fr 0.9fr;
+
+            align-items: center;
+
+            gap: 40px;
+
+            padding: 70px 0;
+
+        }
+
+
+        .eyebrow {
+
+            color: var(--red);
+
+            font-family: monospace;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        h1 {
+
+            font-size:
+                clamp(48px, 7vw, 82px);
+
+            line-height: 0.95;
+
+            letter-spacing: -5px;
+
+        }
+
+
+        h1 span {
+
+            color: transparent;
+
+            -webkit-text-stroke:
+                1px #858e99;
+
+        }
+
+
+        .hero-text {
+
+            color: var(--muted);
+
+            font-size: 18px;
+
+            max-width: 600px;
+
+            margin: 25px 0 30px;
+
+        }
+
+
+        .actions {
+
+            display: flex;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .terminal {
+
+            margin-top: 35px;
+
+            color: #687481;
+
+            font-family: monospace;
+
+            font-size: 12px;
+
+            line-height: 2;
+
+        }
+
+
+        .terminal span {
+
+            color: var(--red);
+
+        }
+
+
+        /* =========================
+           RAT
+        ========================= */
+
+        .rat-container {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+
+        .rat {
+
+            width: 330px;
+
+            height: 330px;
+
+            position: relative;
+
+            border-radius: 50%;
+
+            background:
+
+                radial-gradient(
+                    circle at 45% 40%,
+                    #59616b,
+                    #242a31 42%,
+                    #0d1014 75%
+                );
+
+            box-shadow:
+
+                0 0 0 1px #303741,
+
+                0 0 90px
+                rgba(255,51,71,0.14),
+
+                inset 0 -40px 80px #030405;
+
+        }
+
+
+        .ear {
+
+            position: absolute;
+
+            width: 110px;
+
+            height: 120px;
+
+            top: -20px;
+
+            background: #272d34;
+
+            border:
+                1px solid #3c444e;
+
+            z-index: -1;
+
+        }
+
+
+        .ear-left {
+
+            left: 20px;
+
+            transform:
+                rotate(-28deg);
+
+            border-radius:
+                70% 20% 60% 20%;
+
+        }
+
+
+        .ear-right {
+
+            right: 20px;
+
+            transform:
+                rotate(28deg);
+
+            border-radius:
+                20% 70% 20% 60%;
+
+        }
+
+
+        .eye {
+
+            position: absolute;
+
+            top: 120px;
+
+            width: 48px;
+
+            height: 23px;
+
+            background: var(--red);
+
+            border-radius: 50%;
+
+            box-shadow:
+
+                0 0 20px var(--red),
+
+                0 0 50px
+                rgba(255,51,71,0.55);
+
+        }
+
+
+        .eye-left {
+
+            left: 65px;
+
+        }
+
+
+        .eye-right {
+
+            right: 65px;
+
+        }
+
+
+        .eye::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: 21px;
+
+            top: 3px;
+
+            width: 5px;
+
+            height: 17px;
+
+            background: #120306;
+
+            border-radius: 5px;
+
+        }
+
+
+        .snout {
+
+            position: absolute;
+
+            left: 50%;
+
+            top: 165px;
+
+            transform:
+                translateX(-50%);
+
+            width: 130px;
+
+            height: 110px;
+
+            border-radius:
+                45% 45% 55% 55%;
+
+            background: #343b44;
+
+            box-shadow:
+                inset 0 -15px 25px #16191d;
+
+        }
+
+
+        .nose {
+
+            position: absolute;
+
+            left: 50%;
+
+            top: 7px;
+
+            transform:
+                translateX(-50%);
+
+            width: 32px;
+
+            height: 22px;
+
+            border-radius: 50%;
+
+            background: #070809;
+
+        }
+
+
+        .machine {
+
+            position: absolute;
+
+            right: 5px;
+
+            top: 55px;
+
+            width: 135px;
+
+            height: 220px;
+
+            border-left:
+                2px solid #65707b;
+
+            transform:
+                rotate(7deg);
+
+        }
+
+
+        .machine::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 80px;
+
+            height: 28px;
+
+            top: 40px;
+
+            right: 8px;
+
+            background: #3e4852;
+
+            border:
+                1px solid #6c7782;
+
+            transform:
+                rotate(-18deg);
+
+        }
+
+
+        .machine::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 42px;
+
+            height: 90px;
+
+            top: 85px;
+
+            right: 40px;
+
+            background: #303942;
+
+            border:
+                1px solid #66727e;
+
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+
+            padding: 90px 0;
+
+            border-top:
+                1px solid rgba(255,255,255,0.06);
+
+        }
+
+
+        .section-heading {
+
+            margin-bottom: 40px;
+
+        }
+
+
+        .section-heading h2 {
+
+            font-size:
+                clamp(34px, 5vw, 55px);
+
+            letter-spacing: -2px;
+
+            line-height: 1;
+
+        }
+
+
+        .section-heading p {
+
+            max-width: 650px;
+
+            color: var(--muted);
+
+            margin-top: 15px;
+
+        }
+
+
+        /* =========================
+           SERVICE CARDS
+        ========================= */
+
+        .services {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 16px;
+
+        }
+
+
+        .service {
+
+            padding: 25px;
+
+            min-height: 170px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    var(--surface),
+                    #090b0f
+                );
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 15px;
+
+            transition: 0.25s ease;
+
+        }
+
+
+        .service:hover {
+
+            transform:
+                translateY(-5px);
+
+            border-color:
+                #3a434e;
+
+        }
+
+
+        .service-number {
+
+            color: var(--red);
+
+            font-family: monospace;
+
+            font-size: 12px;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .service h3 {
+
+            margin-bottom: 7px;
+
+        }
+
+
+        .service p {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================
+           PRICING SECTION
+        ========================= */
+
+        #pricing {
+
+            text-align: center;
+
+        }
+
+
+        #pricing .section-heading {
+
+            max-width: 750px;
+
+            margin-left: auto;
+
+            margin-right: auto;
+
+        }
+
+
+        #pricing .section-heading p {
+
+            margin-left: auto;
+
+            margin-right: auto;
+
+        }
+
+
+        #pricing .services {
+
+            text-align: left;
+
+        }
+
+
+        #pricing .service-number {
+
+            font-size: 32px;
+
+            font-weight: 900;
+
+            letter-spacing: -1px;
+
+            color: var(--red);
+
+            margin-bottom: 14px;
+
+            line-height: 1.1;
+
+            text-shadow:
+                0 0 20px
+                rgba(255,51,71,0.18);
+
+        }
+
+
+        #pricing .service h3 {
+
+            font-size: 20px;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        #pricing .service p {
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================
+           PRICING CTA
+        ========================= */
+
+        .price-box {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            padding: 55px 30px;
+
+            border-radius: 20px;
+
+            border:
+                1px solid #2b333d;
+
+            background:
+
+                radial-gradient(
+                    circle at 50% 0,
+                    rgba(255,51,71,0.17),
+                    transparent 45%
+                ),
+
+                var(--surface);
+
+        }
+
+
+        .price-box h3 {
+
+            font-size: 25px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .price-description {
+
+            color: var(--muted);
+
+            max-width: 600px;
+
+            margin:
+                15px auto 25px;
+
+        }
+
+
+        /* =========================
+           PACKAGES
+        ========================= */
+
+        #packages {
+
+            text-align: center;
+
+        }
+
+
+        #packages .section-heading {
+
+            max-width: 700px;
+
+            margin-left: auto;
+
+            margin-right: auto;
+
+        }
+
+
+        #packages .section-heading p {
+
+            margin-left: auto;
+
+            margin-right: auto;
+
+        }
+
+
+        #packages .services {
+
+            text-align: left;
+
+        }
+
+
+        .price {
+
+            font-size: 42px;
+
+            font-weight: 900;
+
+            letter-spacing: -2px;
+
+            margin: 18px 0 8px;
+
+            color: var(--text);
+
+        }
+
+
+        s {
+
+            color: #6f7882;
+
+        }
+
+
+        .service strong {
+
+            color: var(--text);
+
+        }
+
+
+        /* =========================
+           PROCESS
+        ========================= */
+
+        .process {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 16px;
+
+        }
+
+
+        .process-card {
+
+            padding: 28px;
+
+            background: var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 15px;
+
+        }
+
+
+        .process-card strong {
+
+            display: block;
+
+            color: var(--red);
+
+            font-family: monospace;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .process-card p {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+        }
+
+
+        .process-contact {
+
+            margin-top: 35px;
+
+            text-align: center;
+
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .cta {
+
+            padding:
+                80px 0 100px;
+
+        }
+
+
+        .cta-box {
+
+            text-align: center;
+
+            padding:
+                65px 25px;
+
+            border-radius: 20px;
+
+            background:
+
+                radial-gradient(
+                    circle at 80% 0,
+                    rgba(255,51,71,0.16),
+                    transparent 40%
+                ),
+
+                var(--surface);
+
+            border:
+                1px solid #2a313b;
+
+        }
+
+
+        .cta-box h2 {
+
+            font-size:
+                clamp(35px, 5vw, 55px);
+
+            letter-spacing: -2px;
+
+        }
+
+
+        .cta-box p {
+
+            color: var(--muted);
+
+            max-width: 600px;
+
+            margin:
+                15px auto 25px;
+
+        }
+
+
+        .contact-details {
+
+            margin-top: 30px;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 30px;
+
+            flex-wrap: wrap;
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+        }
+
+
+        .contact-details a {
+
+            transition: 0.2s ease;
+
+        }
+
+
+        .contact-details a:hover {
+
+            color: var(--red);
+
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+
+            border-top:
+                1px solid rgba(255,255,255,0.06);
+
+            padding: 25px 0;
+
+            color: #68727d;
+
+            font-size: 12px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 15px;
+
+        }
+
+
+        footer a:hover {
+
+            color: white;
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media(max-width: 800px) {
+
+
+            .nav-links {
+
+                display: none;
+
+            }
+
+
+            nav {
+
+                height: 70px;
+
+            }
+
+
+            .hero {
+
+                grid-template-columns: 1fr;
+
+                padding-top: 50px;
+
+            }
+
+
+            .rat {
+
+                width: 280px;
+
+                height: 280px;
+
+            }
+
+
+            .eye {
+
+                top: 105px;
+
+            }
+
+
+            .eye-left {
+
+                left: 55px;
+
+            }
+
+
+            .eye-right {
+
+                right: 55px;
+
+            }
+
+
+            .snout {
+
+                top: 145px;
+
+            }
+
+
+            .services,
+
+            .process {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            h1 {
+
+                letter-spacing: -3px;
+
+            }
+
+
+            #pricing .service-number {
+
+                font-size: 30px;
+
+            }
+
+
+            .price {
+
+                font-size: 36px;
+
+            }
+
+
+            footer {
+
+                flex-direction: column;
+
+            }
+
+
+            .contact-details {
+
+                flex-direction: column;
+
+                gap: 12px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="container">
+
+    <nav>
+
+
+        <a href="#" class="logo">
+
+            RAT<span>AI</span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#pricing">
+                Pricing
+            </a>
+
+            <a href="#packages">
+                Packages
+            </a>
+
+            <a href="#process">
+                How it works
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+            <a
+                href="https://www.instagram.com/rat.ai.28/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Instagram
+
+            </a>
+
+        </div>
+
+
+        <a
+            href="#contact"
+            class="button">
+
+            Get Started
+
+        </a>
+
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="container hero">
+
+
+    <div>
+
+
+        <div class="eyebrow">
+
+            RAT_AI://HELP_DESK
+
+        </div>
+
+
+        <h1>
+
+            Small fixes.<br>
+
+            <span>Smart solutions.</span>
+
+        </h1>
+
+
+        <p class="hero-text">
+
+            RatAI helps individuals, students and small businesses
+            with affordable digital tasks — from website fixes and
+            CVs to AI-assisted content and business materials.
+
+        </p>
+
+
+        <div class="actions">
+
+
+            <a
+                href="#services"
+                class="button button-primary">
+
+                See What We Do →
+
+            </a>
+
+
+            <a
+                href="#pricing"
+                class="button">
+
+                View Pricing
+
+            </a>
+
+
+        </div>
+
+
+        <div class="terminal">
+
+            <span>></span>
+            problem_detected<br>
+
+            <span>></span>
+            identifying_solution...<br>
+
+            <span>></span>
+            affordable_fix_ready_
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- RAT -->
+
+    <div class="rat-container">
+
+        <div class="rat">
+
+            <div class="ear ear-left"></div>
+
+            <div class="ear ear-right"></div>
+
+            <div class="eye eye-left"></div>
+
+            <div class="eye eye-right"></div>
+
+            <div class="snout">
+
+                <div class="nose"></div>
+
+            </div>
+
+            <div class="machine"></div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+
+                01 / WHAT WE DO
+
+            </div>
+
+
+            <h2>
+
+                Small tasks.<br>
+
+                Done quickly.
+
+            </h2>
+
+
+            <p>
+
+                RatAI focuses on affordable digital tasks that
+                individuals and small businesses often don't want
+                to spend hours doing themselves.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="services">
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    WEB_01
+                </div>
+
+                <h3>
+                    Website Text Change
+                </h3>
+
+                <p>
+                    Update headings, paragraphs, buttons,
+                    product information and other website text.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    WEB_02
+                </div>
+
+                <h3>
+                    Button / Link Addition
+                </h3>
+
+                <p>
+                    Add buttons, navigation links and
+                    call-to-action elements.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    WEB_03
+                </div>
+
+                <h3>
+                    Color / Style Change
+                </h3>
+
+                <p>
+                    Change website colors, backgrounds,
+                    buttons, borders and styling.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    WEB_04
+                </div>
+
+                <h3>
+                    Broken Link Fix
+                </h3>
+
+                <p>
+                    Find and repair broken or incorrect
+                    website links.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    WEB_05
+                </div>
+
+                <h3>
+                    HTML / CSS Fix
+                </h3>
+
+                <p>
+                    Fix spacing, layouts, styling problems
+                    and small front-end bugs.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    WEB_06
+                </div>
+
+                <h3>
+                    Mobile Responsiveness Fix
+                </h3>
+
+                <p>
+                    Fix websites that don't display properly
+                    on phones and tablets.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    WEB_07
+                </div>
+
+                <h3>
+                    Google Maps
+                </h3>
+
+                <p>
+                    Add a Google Maps location to your
+                    business or contact page.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    WEB_08
+                </div>
+
+                <h3>
+                    Contact Form
+                </h3>
+
+                <p>
+                    Add a simple contact form so visitors
+                    can contact your business.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    WEB_09
+                </div>
+
+                <h3>
+                    Static Website Deployment
+                </h3>
+
+                <p>
+                    Deploy static HTML, CSS and JavaScript
+                    websites online.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    WEB_10
+                </div>
+
+                <h3>
+                    Complete Responsive Improvement
+                </h3>
+
+                <p>
+                    Improve your complete website experience
+                    across mobile, tablet and desktop.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    CAREER_01
+                </div>
+
+                <h3>
+                    CV / Resume
+                </h3>
+
+                <p>
+                    Create a clean, professional and
+                    ATS-friendly resume.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    CAREER_02
+                </div>
+
+                <h3>
+                    LinkedIn Makeover
+                </h3>
+
+                <p>
+                    Improve your LinkedIn headline,
+                    About section and professional profile.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    CAREER_03
+                </div>
+
+                <h3>
+                    Cover Letter
+                </h3>
+
+                <p>
+                    Get a professional customized
+                    cover letter.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    CAREER_04
+                </div>
+
+                <h3>
+                    Portfolio Website
+                </h3>
+
+                <p>
+                    A simple website to showcase your skills,
+                    projects and work.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    BUSINESS_01
+                </div>
+
+                <h3>
+                    Digital Menu
+                </h3>
+
+                <p>
+                    Create a mobile-friendly digital menu
+                    for restaurants and small businesses.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    BUSINESS_02
+                </div>
+
+                <h3>
+                    Business QR Page
+                </h3>
+
+                <p>
+                    Create a simple QR-accessible page
+                    containing business information.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    BUSINESS_03
+                </div>
+
+                <h3>
+                    Business Flyer
+                </h3>
+
+                <p>
+                    Create a promotional flyer for your
+                    business, product or service.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    BUSINESS_04
+                </div>
+
+                <h3>
+                    Product Descriptions
+                </h3>
+
+                <p>
+                    Write clear and engaging product
+                    descriptions using AI-assisted workflows.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    DATA_01
+                </div>
+
+                <h3>
+                    PDF → Word / Excel
+                </h3>
+
+                <p>
+                    Convert documents into editable
+                    Word or Excel files.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    DATA_02
+                </div>
+
+                <h3>
+                    Excel Cleanup
+                </h3>
+
+                <p>
+                    Clean, organize and format messy
+                    spreadsheets and data.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    DATA_03
+                </div>
+
+                <h3>
+                    PPT Creation
+                </h3>
+
+                <p>
+                    Create clean presentations for
+                    college, work or business.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     DISCOUNTED PRICING
+========================= -->
+
+<section id="pricing">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+
+                02 / DISCOUNTED PRICING
+
+            </div>
+
+
+            <h2>
+
+                Already discounted.<br>
+
+                No agency pricing.
+
+            </h2>
+
+
+            <p>
+
+                Small tasks at transparent, upfront prices.
+                No hidden charges and no complicated agency quotes.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="services">
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹79
+                </div>
+
+                <h3>
+                    Website Text Change
+                </h3>
+
+                <p>
+                    Update headings, paragraphs, buttons,
+                    product information and other website text.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹99
+                </div>
+
+                <h3>
+                    Button / Link Addition
+                </h3>
+
+                <p>
+                    Add buttons, navigation links and
+                    call-to-action elements.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹129
+                </div>
+
+                <h3>
+                    Color / Style Change
+                </h3>
+
+                <p>
+                    Change website colors, backgrounds,
+                    buttons, borders and styling.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹129
+                </div>
+
+                <h3>
+                    Broken Link Fix
+                </h3>
+
+                <p>
+                    Find and repair broken or incorrect
+                    website links.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹199–₹599
+                </div>
+
+                <h3>
+                    HTML / CSS Fix
+                </h3>
+
+                <p>
+                    Fix spacing, layouts, styling problems
+                    and small front-end bugs.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹249–₹499
+                </div>
+
+                <h3>
+                    Mobile Responsiveness Fix
+                </h3>
+
+                <p>
+                    Fix websites that don't display properly
+                    on phones and tablets.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹199
+                </div>
+
+                <h3>
+                    Google Maps
+                </h3>
+
+                <p>
+                    Add a Google Maps location to your
+                    business or contact page.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹249
+                </div>
+
+                <h3>
+                    Contact Form
+                </h3>
+
+                <p>
+                    Add a simple contact form so visitors
+                    can contact your business.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹299
+                </div>
+
+                <h3>
+                    Static Website Deployment
+                </h3>
+
+                <p>
+                    Deploy static HTML, CSS and JavaScript
+                    websites online.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹399
+                </div>
+
+                <h3>
+                    Complete Responsive Improvement
+                </h3>
+
+                <p>
+                    Improve your complete website experience
+                    across mobile, tablet and desktop.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹149
+                </div>
+
+                <h3>
+                    CV / Resume
+                </h3>
+
+                <p>
+                    Professional and ATS-friendly resume
+                    designed for job applications.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹149
+                </div>
+
+                <h3>
+                    LinkedIn Makeover
+                </h3>
+
+                <p>
+                    Improve your LinkedIn headline,
+                    About section and professional profile.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹59
+                </div>
+
+                <h3>
+                    Cover Letter
+                </h3>
+
+                <p>
+                    Professional customized cover letter
+                    for your job application.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹499
+                </div>
+
+                <h3>
+                    Portfolio Website
+                </h3>
+
+                <p>
+                    A simple personal website to showcase
+                    your skills, projects and work.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹299
+                </div>
+
+                <h3>
+                    Digital Menu
+                </h3>
+
+                <p>
+                    Mobile-friendly digital menu.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹249
+                </div>
+
+                <h3>
+                    Business QR Page
+                </h3>
+
+                <p>
+                    QR-accessible business information page.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹149
+                </div>
+
+                <h3>
+                    Business Flyer
+                </h3>
+
+                <p>
+                    Promotional business flyer.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹99+
+                </div>
+
+                <h3>
+                    Product Descriptions
+                </h3>
+
+                <p>
+                    AI-assisted product copywriting.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹99+
+                </div>
+
+                <h3>
+                    PDF → Word / Excel
+                </h3>
+
+                <p>
+                    Convert documents into editable formats.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹149+
+                </div>
+
+                <h3>
+                    Excel Cleanup
+                </h3>
+
+                <p>
+                    Clean and organize spreadsheets.
+                </p>
+
+            </article>
+
+
+            <article class="service">
+
+                <div class="service-number">
+                    ₹249+
+                </div>
+
+                <h3>
+                    PPT Creation
+                </h3>
+
+                <p>
+                    Professional presentation creation.
+                </p>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- PRICING CTA -->
+
+        <div
+            class="price-box"
+            style="margin-top:40px;">
+
+            <div class="eyebrow">
+
+                RAT_AI://LOWEST_PRICE
+
+            </div>
+
+
+            <h3>
+
+                Need more than one thing?
+
+            </h3>
+
+
+            <p class="price-description">
+
+                Check out our bundle packages and save even more
+                compared with ordering individual services.
+
+            </p>
+
+
+            <a
+                href="#packages"
+                class="button button-primary">
+
+                View Bundle Packages →
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PACKAGES
+========================= -->
+
+<section
+    id="packages"
+    class="price-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+
+                03 / BUNDLE & SAVE
+
+            </div>
+
+
+            <h2>
+
+                Bundle it.<br>
+
+                Pay less.
+
+            </h2>
+
+
+            <p>
+
+                Need multiple services?
+                Choose a starter package and save
+                compared with ordering separately.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="services">
+
+
+            <!-- JOB STARTER -->
+
+            <article class="service">
+
+                <div class="service-number">
+
+                    PACKAGE_01
+
+                </div>
+
+
+                <h3>
+
+                    Job Starter
+
+                </h3>
+
+
+                <p>
+
+                    CV / Resume +
+                    LinkedIn Makeover +
+                    Cover Letter
+
+                </p>
+
+
+                <div class="price">
+
+                    ₹249
+
+                </div>
+
+
+                <p>
+
+                    <s>
+                        Individual value: ₹357
+                    </s>
+
+                    <br>
+
+                    <strong>
+                        Save ₹108
+                    </strong>
+
+                </p>
+
+
+                <br>
+
+
+                <a
+                    href="#contact"
+                    class="button button-primary">
+
+                    Get This Pack →
+
+                </a>
+
+            </article>
+
+
+
+            <!-- WEBSITE FIX -->
+
+            <article class="service">
+
+                <div class="service-number">
+
+                    PACKAGE_02
+
+                </div>
+
+
+                <h3>
+
+                    Website Fix Pack
+
+                </h3>
+
+
+                <p>
+
+                    Any 3 small website fixes.
+
+                </p>
+
+
+                <div class="price">
+
+                    ₹399
+
+                </div>
+
+
+                <p>
+
+                    <s>
+                        Individual pricing
+                    </s>
+
+                    <br>
+
+                    <strong>
+                        Bundle pricing
+                    </strong>
+
+                </p>
+
+
+                <br>
+
+
+                <a
+                    href="#contact"
+                    class="button button-primary">
+
+                    Get This Pack →
+
+                </a>
+
+            </article>
+
+
+
+            <!-- BUSINESS -->
+
+            <article class="service">
+
+                <div class="service-number">
+
+                    PACKAGE_03
+
+                </div>
+
+
+                <h3>
+
+                    Business Starter
+
+                </h3>
+
+
+                <p>
+
+                    Digital Menu +
+                    Business QR Page +
+                    Business Flyer
+
+                </p>
+
+
+                <div class="price">
+
+                    ₹599
+
+                </div>
+
+
+                <p>
+
+                    <s>
+                        Individual value: ₹697
+                    </s>
+
+                    <br>
+
+                    <strong>
+                        Save ₹98
+                    </strong>
+
+                </p>
+
+
+                <br>
+
+
+                <a
+                    href="#contact"
+                    class="button button-primary">
+
+                    Get This Pack →
+
+                </a>
+
+            </article>
+
+
+
+            <!-- SOCIAL -->
+
+            <article class="service">
+
+                <div class="service-number">
+
+                    PACKAGE_04
+
+                </div>
+
+
+                <h3>
+
+                    Social Starter
+
+                </h3>
+
+
+                <p>
+
+                    5 social posts +
+                    5 captions +
+                    profile bio
+
+                </p>
+
+
+                <div class="price">
+
+                    ₹299
+
+                </div>
+
+
+                <p>
+
+                    <s>
+                        Regular value ₹399+
+                    </s>
+
+                    <br>
+
+                    <strong>
+                        Save more with the pack
+                    </strong>
+
+                </p>
+
+
+                <br>
+
+
+                <a
+                    href="#contact"
+                    class="button button-primary">
+
+                    Get This Pack →
+
+                </a>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- CUSTOM REQUEST -->
+
+        <div
+            class="price-box"
+            style="margin-top:40px;">
+
+
+            <div class="eyebrow">
+
+                RAT_AI://CUSTOM_REQUEST
+
+            </div>
+
+
+            <h3>
+
+                Need something different?
+
+            </h3>
+
+
+            <p class="price-description">
+
+                Don't see exactly what you need?
+                Send us the task and we'll give you
+                a clear price before starting.
+
+            </p>
+
+
+            <a
+                href="#contact"
+                class="button button-primary">
+
+                Ask for a Price →
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROCESS
+========================= -->
+
+<section id="process">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+
+                04 / HOW IT WORKS
+
+            </div>
+
+
+            <h2>
+
+                No complicated process.
+
+            </h2>
+
+
+            <p>
+
+                Tell us what you need.
+                We handle the task.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="process">
+
+
+            <div class="process-card">
+
+                <strong>
+
+                    01 / SEND
+
+                </strong>
+
+
+                <h3>
+
+                    Tell us what you need
+
+                </h3>
+
+
+                <p>
+
+                    Send your website, document or requirement
+                    through email or Instagram.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="process-card">
+
+                <strong>
+
+                    02 / QUOTE
+
+                </strong>
+
+
+                <h3>
+
+                    Get the price
+
+                </h3>
+
+
+                <p>
+
+                    We'll check the task and confirm the final
+                    price before starting.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="process-card">
+
+                <strong>
+
+                    03 / DONE
+
+                </strong>
+
+
+                <h3>
+
+                    Receive the result
+
+                </h3>
+
+
+                <p>
+
+                    Review the completed work and receive
+                    your final files or updated website.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- CONTACT BUTTON -->
+
+        <div class="process-contact">
+
+
+            <a
+                href="#contact"
+                class="button button-primary">
+
+                Have a Task? Contact RatAI →
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section
+    id="contact"
+    class="cta">
+
+    <div class="container">
+
+
+        <div class="cta-box">
+
+
+            <div class="eyebrow">
+
+                RAT_AI://CONTACT
+
+            </div>
+
+
+            <h2>
+
+                Got a small digital problem?
+
+            </h2>
+
+
+            <p>
+
+                Website fix?
+                CV?
+                Portfolio?
+                Business material?
+                AI-assisted task?
+
+                Tell RatAI what you need.
+
+            </p>
+
+
+            <div
+                class="actions"
+                style="justify-content:center;">
+
+
+                <a
+                    href="mailto:heyratai1828@gmail.com?subject=RatAI%20Service%20Request"
+                    class="button button-primary">
+
+                    Email RatAI →
+
+                </a>
+
+
+                <a
+                    href="https://www.instagram.com/rat.ai.28/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button">
+
+                    Instagram @rat.ai.28
+
+                </a>
+
+
+            </div>
+
+
+            <div class="contact-details">
+
+
+                <a
+                    href="mailto:heyratai1828@gmail.com">
+
+                    📧 heyratai1828@gmail.com
+
+                </a>
+
+
+                <a
+                    href="https://www.instagram.com/rat.ai.28/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    📸 @rat.ai.28
+
+                </a>
+
+
+            </div>
+
+
+            <div
+                class="terminal"
+                style="margin-top:25px;">
+
+                <span>></span>
+                email: heyratai1828@gmail.com<br>
+
+                <span>></span>
+                instagram: @rat.ai.28<br>
+
+                <span>></span>
+                status: accepting_requests_
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="container">
+
+
+    <span>
+
+        © 2026 RatAI
+
+    </span>
+
+
+    <span>
+
+
+        <a
+            href="mailto:heyratai1828@gmail.com">
+
+            heyratai1828@gmail.com
+
+        </a>
+
+
+        &nbsp; | &nbsp;
+
+
+        <a
+            href="https://www.instagram.com/rat.ai.28/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Instagram @rat.ai.28
+
+        </a>
+
+
+    </span>
+
+
+</footer>
+
+
+</body>
+
+</html>
+
