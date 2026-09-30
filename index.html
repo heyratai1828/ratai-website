@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,11 +10,12 @@
 
     <title>RatAI — Small Digital Tasks. Smart Solutions.</title>
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐀</text></svg>">
+    <link rel="icon"
+          type="image/jpeg"
+          href="assets/branding/DP-Ratai.jpg">
 
     <meta name="description"
           content="RatAI provides affordable website fixes, CVs, LinkedIn makeovers, portfolio websites, business materials, AI-assisted digital services and more.">
-
 
     <style>
 
@@ -29,53 +29,33 @@
             box-sizing: border-box;
         }
 
-
         :root {
-
-            --background: #07090c;
-
-            --surface: #0d1117;
-
-            --surface-light: #121821;
-
-            --border: #202832;
-
+            --background: #030405;
+            --surface: #090a0c;
+            --surface-light: #0f1114;
+            --border: #1d2024;
             --text: #f4f5f7;
-
-            --muted: #929ba8;
-
-            --red: #ff3347;
-
-            --red-dark: #c9142a;
-
-            --cyan: #62dfff;
-
+            --muted: #8b9098;
+            --red: #e31b23;
+            --red-dark: #8f0e16;
         }
-
 
         html {
-
             scroll-behavior: smooth;
-
         }
 
-
         body {
-
             background:
-
                 radial-gradient(
                     circle at 80% 10%,
-                    rgba(255, 51, 71, 0.13),
+                    rgba(227, 27, 35, 0.11),
                     transparent 30%
                 ),
-
                 radial-gradient(
                     circle at 10% 70%,
-                    rgba(98, 223, 255, 0.06),
+                    rgba(229, 57, 53, 0.06),
                     transparent 28%
                 ),
-
                 var(--background);
 
             color: var(--text);
@@ -89,31 +69,21 @@
                 sans-serif;
 
             line-height: 1.6;
-
             overflow-x: hidden;
-
         }
 
-
         body::before {
-
             content:
                 "RAT_AI://ONLINE   R4T_AI   SYSTEM_01   RAT.AI   RAT_AI://ONLINE";
 
             position: fixed;
-
             inset: 0;
-
             pointer-events: none;
-
             opacity: 0.025;
 
             font-family: monospace;
-
             font-size: 13px;
-
             line-height: 4;
-
             letter-spacing: 3px;
 
             transform:
@@ -121,29 +91,18 @@
                 scale(1.3);
 
             z-index: 0;
-
         }
-
 
         a {
-
             color: inherit;
-
             text-decoration: none;
-
         }
 
-
         .container {
-
             width: min(1150px, 92%);
-
             margin: auto;
-
             position: relative;
-
             z-index: 1;
-
         }
 
 
@@ -152,63 +111,38 @@
         ========================= */
 
         nav {
-
             height: 78px;
-
             display: flex;
-
             align-items: center;
-
             justify-content: space-between;
 
             border-bottom:
                 1px solid rgba(255,255,255,0.06);
-
         }
-
 
         .logo {
-
             font-size: 24px;
-
             font-weight: 900;
-
             letter-spacing: -1px;
-
         }
-
 
         .logo span {
-
             color: var(--red);
-
         }
-
 
         .nav-links {
-
             display: flex;
-
             gap: 24px;
-
             color: var(--muted);
-
             font-size: 14px;
-
         }
-
 
         .nav-links a {
-
             transition: 0.2s ease;
-
         }
 
-
         .nav-links a:hover {
-
             color: white;
-
         }
 
 
@@ -217,59 +151,39 @@
         ========================= */
 
         .button {
-
             display: inline-flex;
-
             align-items: center;
-
             justify-content: center;
 
             padding: 12px 20px;
 
             border-radius: 9px;
-
-            border:
-                1px solid var(--border);
+            border: 1px solid var(--border);
 
             background: var(--surface);
 
             font-weight: 700;
-
             font-size: 14px;
 
             transition: 0.2s ease;
-
         }
-
 
         .button:hover {
-
-            transform:
-                translateY(-2px);
-
-            border-color:
-                #39434f;
-
+            transform: translateY(-2px);
+            border-color: #39434f;
         }
 
-
         .button-primary {
-
             background: var(--red);
-
             border-color: var(--red);
 
             box-shadow:
                 0 0 35px
-                rgba(255,51,71,0.18);
-
+                rgba(227,27,35,0.15);
         }
 
-
         .button-primary:hover {
-
-            background: #ff4659;
-
+            background: #f0262e;
         }
 
 
@@ -278,135 +192,92 @@
         ========================= */
 
         .hero {
-
             min-height: 650px;
 
             display: grid;
-
-            grid-template-columns:
-                1.1fr 0.9fr;
+            grid-template-columns: 1.1fr 0.9fr;
 
             align-items: center;
-
             gap: 40px;
 
             padding: 70px 0;
-
         }
 
-
         .eyebrow {
-
             color: var(--red);
 
             font-family: monospace;
-
             font-size: 12px;
-
             font-weight: 700;
 
             letter-spacing: 2px;
-
             margin-bottom: 20px;
-
         }
 
-
         h1 {
-
             font-size:
                 clamp(48px, 7vw, 82px);
 
             line-height: 0.95;
-
             letter-spacing: -5px;
-
         }
 
-
         h1 span {
-
             color: transparent;
 
             -webkit-text-stroke:
                 1px #858e99;
-
         }
 
-
         .hero-text {
-
             color: var(--muted);
 
             font-size: 18px;
-
             max-width: 600px;
 
-            margin: 25px 0 30px;
-
+            margin:
+                25px 0 30px;
         }
-
 
         .actions {
-
             display: flex;
-
             gap: 12px;
-
             flex-wrap: wrap;
-
         }
 
-
         .terminal {
-
             margin-top: 35px;
 
             color: #687481;
 
             font-family: monospace;
-
             font-size: 12px;
-
             line-height: 2;
-
         }
 
-
         .terminal span {
-
             color: var(--red);
-
         }
 
 
         /* =========================
-           RAT
+           RAT / BRAND VISUAL
         ========================= */
 
         .rat-container {
-
             display: flex;
-
             justify-content: center;
-
             align-items: center;
-
         }
 
-
         .rat {
-
             width: 330px;
-
             height: 330px;
 
             position: relative;
-
             border-radius: 50%;
 
             background:
-
                 radial-gradient(
                     circle at 45% 40%,
                     #59616b,
@@ -415,23 +286,15 @@
                 );
 
             box-shadow:
-
                 0 0 0 1px #303741,
-
-                0 0 90px
-                rgba(255,51,71,0.14),
-
+                0 0 90px rgba(227,27,35,0.12),
                 inset 0 -40px 80px #030405;
-
         }
 
-
         .ear {
-
             position: absolute;
 
             width: 110px;
-
             height: 120px;
 
             top: -20px;
@@ -442,44 +305,32 @@
                 1px solid #3c444e;
 
             z-index: -1;
-
         }
 
-
         .ear-left {
-
             left: 20px;
 
-            transform:
-                rotate(-28deg);
+            transform: rotate(-28deg);
 
             border-radius:
                 70% 20% 60% 20%;
-
         }
 
-
         .ear-right {
-
             right: 20px;
 
-            transform:
-                rotate(28deg);
+            transform: rotate(28deg);
 
             border-radius:
                 20% 70% 20% 60%;
-
         }
 
-
         .eye {
-
             position: absolute;
 
             top: 120px;
 
             width: 48px;
-
             height: 23px;
 
             background: var(--red);
@@ -487,63 +338,44 @@
             border-radius: 50%;
 
             box-shadow:
-
                 0 0 20px var(--red),
-
-                0 0 50px
-                rgba(255,51,71,0.55);
-
+                0 0 50px rgba(227,27,35,0.50);
         }
-
 
         .eye-left {
-
             left: 65px;
-
         }
-
 
         .eye-right {
-
             right: 65px;
-
         }
 
-
         .eye::after {
-
             content: "";
 
             position: absolute;
 
             left: 21px;
-
             top: 3px;
 
             width: 5px;
-
             height: 17px;
 
             background: #120306;
 
             border-radius: 5px;
-
         }
 
-
         .snout {
-
             position: absolute;
 
             left: 50%;
-
             top: 165px;
 
             transform:
                 translateX(-50%);
 
             width: 130px;
-
             height: 110px;
 
             border-radius:
@@ -553,42 +385,32 @@
 
             box-shadow:
                 inset 0 -15px 25px #16191d;
-
         }
 
-
         .nose {
-
             position: absolute;
 
             left: 50%;
-
             top: 7px;
 
             transform:
                 translateX(-50%);
 
             width: 32px;
-
             height: 22px;
 
             border-radius: 50%;
 
             background: #070809;
-
         }
 
-
         .machine {
-
             position: absolute;
 
             right: 5px;
-
             top: 55px;
 
             width: 135px;
-
             height: 220px;
 
             border-left:
@@ -596,22 +418,17 @@
 
             transform:
                 rotate(7deg);
-
         }
 
-
         .machine::before {
-
             content: "";
 
             position: absolute;
 
             width: 80px;
-
             height: 28px;
 
             top: 40px;
-
             right: 8px;
 
             background: #3e4852;
@@ -621,29 +438,118 @@
 
             transform:
                 rotate(-18deg);
-
         }
 
-
         .machine::after {
-
             content: "";
 
             position: absolute;
 
             width: 42px;
-
             height: 90px;
 
             top: 85px;
-
             right: 40px;
 
             background: #303942;
 
             border:
                 1px solid #66727e;
+        }
 
+
+        /* =========================
+           RAT_AI BRAND VISUAL
+        ========================= */
+
+        .logo-image {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 150px;
+            height: 46px;
+
+            overflow: hidden;
+            border-radius: 7px;
+
+            background: #050505;
+
+            flex: 0 0 auto;
+        }
+
+        .logo-image img {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: contain;
+            object-position: center;
+
+            filter:
+                saturate(1.03)
+                contrast(1.03);
+        }
+
+        .brand-visual-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .brand-visual-frame {
+            position: relative;
+
+            width: min(470px, 100%);
+            aspect-ratio: 1 / 1;
+
+            background: #030405;
+
+            border-radius: 24px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 28px 90px rgba(0,0,0,.58),
+                0 0 70px rgba(227,27,35,.10);
+        }
+
+        .brand-visual-frame::after {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            pointer-events: none;
+
+            background:
+                radial-gradient(
+                    circle at 50% 46%,
+                    transparent 58%,
+                    rgba(3,4,5,.30) 77%,
+                    rgba(3,4,5,.92) 100%
+                );
+
+            mix-blend-mode: multiply;
+        }
+
+        .brand-visual {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: cover;
+
+            border-radius: inherit;
+
+            background: #030405;
+        }
+
+        .brand-visual-label {
+            display: none;
         }
 
 
@@ -652,42 +558,30 @@
         ========================= */
 
         section {
-
             padding: 90px 0;
 
             border-top:
                 1px solid rgba(255,255,255,0.06);
-
         }
-
 
         .section-heading {
-
             margin-bottom: 40px;
-
         }
 
-
         .section-heading h2 {
-
             font-size:
                 clamp(34px, 5vw, 55px);
 
             letter-spacing: -2px;
-
             line-height: 1;
-
         }
 
-
         .section-heading p {
-
             max-width: 650px;
 
             color: var(--muted);
 
             margin-top: 15px;
-
         }
 
 
@@ -696,25 +590,20 @@
         ========================= */
 
         .services {
-
             display: grid;
 
             grid-template-columns:
                 repeat(2, 1fr);
 
             gap: 16px;
-
         }
 
-
         .service {
-
             padding: 25px;
 
             min-height: 170px;
 
             background:
-
                 linear-gradient(
                     145deg,
                     var(--surface),
@@ -727,23 +616,17 @@
             border-radius: 15px;
 
             transition: 0.25s ease;
-
         }
 
-
         .service:hover {
-
             transform:
                 translateY(-5px);
 
             border-color:
                 #3a434e;
-
         }
 
-
         .service-number {
-
             color: var(--red);
 
             font-family: monospace;
@@ -751,112 +634,28 @@
             font-size: 12px;
 
             margin-bottom: 18px;
-
         }
-
 
         .service h3 {
-
             margin-bottom: 7px;
-
         }
-
 
         .service p {
-
             color: var(--muted);
-
             font-size: 14px;
-
         }
 
 
         /* =========================
-           PRICING SECTION
+           QUOTE CTA
         ========================= */
 
-        #pricing {
-
-            text-align: center;
-
-        }
-
-
-        #pricing .section-heading {
-
-            max-width: 750px;
-
-            margin-left: auto;
-
-            margin-right: auto;
-
-        }
-
-
-        #pricing .section-heading p {
-
-            margin-left: auto;
-
-            margin-right: auto;
-
-        }
-
-
-        #pricing .services {
-
-            text-align: left;
-
-        }
-
-
-        #pricing .service-number {
-
-            font-size: 32px;
-
-            font-weight: 900;
-
-            letter-spacing: -1px;
-
-            color: var(--red);
-
-            margin-bottom: 14px;
-
-            line-height: 1.1;
-
-            text-shadow:
-                0 0 20px
-                rgba(255,51,71,0.18);
-
-        }
-
-
-        #pricing .service h3 {
-
-            font-size: 20px;
-
-            margin-bottom: 8px;
-
-        }
-
-
-        #pricing .service p {
-
-            font-size: 14px;
-
-        }
-
-
-        /* =========================
-           PRICING CTA
-        ========================= */
-
-        .price-box {
-
+        .quote-box {
             max-width: 850px;
-
             margin: auto;
 
-            padding: 55px 30px;
+            padding:
+                55px 30px;
 
             border-radius: 20px;
 
@@ -864,103 +663,28 @@
                 1px solid #2b333d;
 
             background:
-
                 radial-gradient(
                     circle at 50% 0,
-                    rgba(255,51,71,0.17),
+                    rgba(227,27,35,0.15),
                     transparent 45%
                 ),
-
                 var(--surface);
 
+            text-align: center;
         }
 
-
-        .price-box h3 {
-
+        .quote-box h3 {
             font-size: 25px;
-
             margin-bottom: 10px;
-
         }
 
-
-        .price-description {
-
+        .quote-description {
             color: var(--muted);
 
             max-width: 600px;
 
             margin:
                 15px auto 25px;
-
-        }
-
-
-        /* =========================
-           PACKAGES
-        ========================= */
-
-        #packages {
-
-            text-align: center;
-
-        }
-
-
-        #packages .section-heading {
-
-            max-width: 700px;
-
-            margin-left: auto;
-
-            margin-right: auto;
-
-        }
-
-
-        #packages .section-heading p {
-
-            margin-left: auto;
-
-            margin-right: auto;
-
-        }
-
-
-        #packages .services {
-
-            text-align: left;
-
-        }
-
-
-        .price {
-
-            font-size: 42px;
-
-            font-weight: 900;
-
-            letter-spacing: -2px;
-
-            margin: 18px 0 8px;
-
-            color: var(--text);
-
-        }
-
-
-        s {
-
-            color: #6f7882;
-
-        }
-
-
-        .service strong {
-
-            color: var(--text);
-
         }
 
 
@@ -969,19 +693,15 @@
         ========================= */
 
         .process {
-
             display: grid;
 
             grid-template-columns:
                 repeat(3, 1fr);
 
             gap: 16px;
-
         }
 
-
         .process-card {
-
             padding: 28px;
 
             background: var(--surface);
@@ -990,12 +710,9 @@
                 1px solid var(--border);
 
             border-radius: 15px;
-
         }
 
-
         .process-card strong {
-
             display: block;
 
             color: var(--red);
@@ -1003,25 +720,16 @@
             font-family: monospace;
 
             margin-bottom: 15px;
-
         }
-
 
         .process-card p {
-
             color: var(--muted);
-
             font-size: 14px;
-
         }
 
-
         .process-contact {
-
             margin-top: 35px;
-
             text-align: center;
-
         }
 
 
@@ -1030,15 +738,11 @@
         ========================= */
 
         .cta {
-
             padding:
                 80px 0 100px;
-
         }
 
-
         .cta-box {
-
             text-align: center;
 
             padding:
@@ -1047,45 +751,34 @@
             border-radius: 20px;
 
             background:
-
                 radial-gradient(
                     circle at 80% 0,
-                    rgba(255,51,71,0.16),
+                    rgba(227,27,35,0.14),
                     transparent 40%
                 ),
-
                 var(--surface);
 
             border:
                 1px solid #2a313b;
-
         }
 
-
         .cta-box h2 {
-
             font-size:
                 clamp(35px, 5vw, 55px);
 
             letter-spacing: -2px;
-
         }
 
-
         .cta-box p {
-
             color: var(--muted);
 
             max-width: 600px;
 
             margin:
                 15px auto 25px;
-
         }
 
-
         .contact-details {
-
             margin-top: 30px;
 
             display: flex;
@@ -1099,21 +792,14 @@
             color: var(--muted);
 
             font-size: 14px;
-
         }
-
 
         .contact-details a {
-
             transition: 0.2s ease;
-
         }
 
-
         .contact-details a:hover {
-
             color: var(--red);
-
         }
 
 
@@ -1122,11 +808,11 @@
         ========================= */
 
         footer {
-
             border-top:
                 1px solid rgba(255,255,255,0.06);
 
-            padding: 25px 0;
+            padding:
+                25px 0;
 
             color: #68727d;
 
@@ -1137,14 +823,1004 @@
             justify-content: space-between;
 
             gap: 15px;
+        }
 
+        footer a:hover {
+            color: white;
         }
 
 
-        footer a:hover {
+        /* =========================
+           RESPONSIVE NAVIGATION
+        ========================= */
 
-            color: white;
+        .nav-actions {
+            display: flex;
 
+            align-items: center;
+
+            gap: 10px;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+
+            width: 44px;
+            height: 44px;
+
+            padding: 10px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            background: #090b0f;
+
+            cursor: pointer;
+
+            align-items: center;
+            justify-content: center;
+
+            flex-direction: column;
+
+            gap: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            display: block;
+
+            width: 19px;
+            height: 2px;
+
+            border-radius: 999px;
+
+            background: #f4f5f7;
+
+            transition:
+                transform .2s ease,
+                opacity .2s ease;
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"]
+        span:nth-child(1) {
+            transform:
+                translateY(7px)
+                rotate(45deg);
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"]
+        span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"]
+        span:nth-child(3) {
+            transform:
+                translateY(-7px)
+                rotate(-45deg);
+        }
+
+        .mobile-nav {
+            display: none;
+        }
+
+
+        /* =========================
+           LOADER
+        ========================= */
+
+        #site-loader {
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 99999;
+
+            display: grid;
+
+            place-items: center;
+
+            background:
+                radial-gradient(
+                    circle at 50% 50%,
+                    rgba(227,27,35,0.08),
+                    transparent 34%
+                ),
+                #020304;
+
+            overflow: hidden;
+
+            transition:
+                opacity .55s ease,
+                visibility .55s ease;
+        }
+
+        #site-loader::before {
+            content: "";
+
+            position: absolute;
+
+            inset: -20%;
+
+            background-image:
+                linear-gradient(
+                    rgba(255,255,255,.018) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,.018) 1px,
+                    transparent 1px
+                );
+
+            background-size: 34px 34px;
+
+            transform:
+                perspective(700px)
+                rotateX(58deg)
+                translateY(12%);
+
+            transform-origin:
+                center bottom;
+
+            opacity: .75;
+        }
+
+        #site-loader::after {
+            content:
+                "RAT_AI://BOOT  •  SYSTEM_CHECK  •  DIGITAL_SOLUTIONS";
+
+            position: absolute;
+
+            top: 28px;
+            left: 50%;
+
+            transform:
+                translateX(-50%);
+
+            width: max-content;
+
+            max-width: 92%;
+
+            color:
+                rgba(255,255,255,.28);
+
+            font:
+                700 10px/1 monospace;
+
+            letter-spacing: 2px;
+        }
+
+        .loader-panel {
+            position: relative;
+
+            width:
+                min(520px, 88vw);
+
+            padding:
+                36px 28px 30px;
+
+            border:
+                1px solid rgba(255,255,255,.10);
+
+            border-radius: 22px;
+
+            background:
+                rgba(8,9,11,.94);
+
+            backdrop-filter:
+                blur(18px);
+
+            box-shadow:
+                0 24px 90px rgba(0,0,0,.48),
+                0 0 70px rgba(227,27,35,.07);
+
+            text-align: center;
+        }
+
+        .loader-logo {
+            font-size: 34px;
+
+            font-weight: 900;
+
+            letter-spacing: -2px;
+        }
+
+        .loader-logo span {
+            color: var(--red);
+        }
+
+        .loader-status {
+            margin-top: 10px;
+
+            color: var(--muted);
+
+            font:
+                700 11px/1.5 monospace;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+        .loader-percent {
+            margin-top: 18px;
+
+            font-size:
+                clamp(46px, 10vw, 76px);
+
+            font-weight: 900;
+
+            line-height: .9;
+
+            letter-spacing: -5px;
+        }
+
+        .loader-track {
+            height: 6px;
+
+            margin-top: 22px;
+
+            border-radius: 999px;
+
+            background: #101216;
+
+            overflow: hidden;
+
+            border:
+                1px solid rgba(255,255,255,.06);
+        }
+
+        .loader-fill {
+            width: 0%;
+
+            height: 100%;
+
+            border-radius: inherit;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--red-dark),
+                    var(--red),
+                    #ef262d
+                );
+
+            box-shadow:
+                0 0 24px
+                rgba(227,27,35,.40);
+
+            transition:
+                width .08s linear;
+        }
+
+        .loader-terminal {
+            margin-top: 16px;
+
+            color: #606b77;
+
+            font:
+                11px/1.8 monospace;
+        }
+
+        .loader-terminal span {
+            color: var(--red);
+        }
+
+        body.is-ready #site-loader {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        body.loading-lock {
+            overflow: hidden;
+        }
+
+
+        /* =========================
+           SERVICE TABS
+        ========================= */
+
+        .service-tabs {
+            display: flex;
+
+            gap: 10px;
+
+            flex-wrap: wrap;
+
+            margin-bottom: 24px;
+        }
+
+        .service-tab {
+            --tab-accent: 227,27,35;
+
+            border:
+                1px solid
+                rgba(var(--tab-accent), .32);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(var(--tab-accent), .10),
+                    rgba(8,9,11,.96)
+                );
+
+            color: #dfe4ea;
+
+            padding:
+                12px 17px;
+
+            border-radius: 11px;
+
+            font:
+                800 12px/1 monospace;
+
+            cursor: pointer;
+
+            transition:
+                .22s ease;
+
+            letter-spacing: .7px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 26px
+                rgba(0,0,0,.16);
+        }
+
+        .service-tab::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    115deg,
+                    transparent 15%,
+                    rgba(227,57,53,.10) 50%,
+                    transparent 85%
+                );
+
+            transform:
+                translateX(-120%);
+
+            transition:
+                .5s ease;
+
+            pointer-events: none;
+        }
+
+        .service-tab:nth-child(1) {
+            --tab-accent: 227,27,35;
+        }
+
+        .service-tab:nth-child(2) {
+            --tab-accent: 227,27,35;
+        }
+
+        .service-tab:nth-child(3) {
+            --tab-accent: 227,27,35;
+        }
+
+        .service-tab:nth-child(4) {
+            --tab-accent: 227,27,35;
+        }
+
+        .service-tab:hover {
+            color: #fff;
+
+            border-color:
+                rgba(var(--tab-accent), .72);
+
+            transform:
+                translateY(-2px);
+
+            box-shadow:
+                0 12px 34px
+                rgba(var(--tab-accent), .12);
+        }
+
+        .service-tab:hover::before {
+            transform:
+                translateX(120%);
+        }
+
+        .service-tab.active {
+            color: #fff;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(var(--tab-accent), .24),
+                    rgba(8,9,11,.96)
+                );
+
+            border-color:
+                rgba(var(--tab-accent), .95);
+
+            box-shadow:
+                0 0 28px
+                rgba(var(--tab-accent), .18),
+                inset 0 0 22px
+                rgba(var(--tab-accent), .06);
+        }
+
+        .service-panel {
+            display: none;
+
+            animation:
+                panelIn .28s ease both;
+        }
+
+        .service-panel.active {
+            display: block;
+        }
+
+        @keyframes panelIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service-panel-note {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            margin:
+                0 0 16px;
+        }
+
+
+        /* =========================
+           PROMPT LAB
+        ========================= */
+
+        #prompts {
+            text-align: left;
+        }
+
+        #prompts .section-heading {
+            max-width: 760px;
+        }
+
+        .prompt-browser {
+            display: grid;
+
+            grid-template-columns:
+                300px
+                minmax(0, 1fr);
+
+            gap: 18px;
+
+            align-items: stretch;
+        }
+
+        .video-list {
+            padding: 12px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 16px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(10,11,13,.98),
+                    rgba(3,4,5,.99)
+                );
+
+            align-self: start;
+
+            position: sticky;
+
+            top: 20px;
+        }
+
+        .video-list-label {
+            padding:
+                8px 10px 12px;
+
+            color: var(--red);
+
+            font:
+                800 10px/1.2 monospace;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+        }
+
+        .video-link {
+            width: 100%;
+
+            display: block;
+
+            text-align: left;
+
+            padding:
+                13px 14px;
+
+            margin-top: 6px;
+
+            border:
+                1px solid transparent;
+
+            border-radius: 11px;
+
+            background: transparent;
+
+            color: #cbd2da;
+
+            font:
+                700 12px/1.4 monospace;
+
+            cursor: pointer;
+
+            transition:
+                .2s ease;
+        }
+
+        .video-link:hover {
+            border-color:
+                rgba(227,27,35,.32);
+
+            background:
+                rgba(227,27,35,.06);
+
+            color: #fff;
+
+            transform:
+                translateX(2px);
+        }
+
+        .video-link.active {
+            border-color:
+                rgba(227,27,35,.70);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(227,27,35,.15),
+                    rgba(227,27,35,.045)
+                );
+
+            color: #fff;
+
+            box-shadow:
+                inset 3px 0 0 var(--red),
+                0 0 20px
+                rgba(227,27,35,.07);
+        }
+
+        .video-link .video-id {
+            display: block;
+
+            margin-bottom: 4px;
+
+            color: var(--red);
+
+            font-size: 10px;
+
+            letter-spacing: 1px;
+        }
+
+        .prompt-viewer {
+            min-width: 0;
+        }
+
+        .prompt-toolbar {
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items: center;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+
+            margin-bottom: 14px;
+        }
+
+        .prompt-count {
+            color: var(--muted);
+
+            font:
+                700 11px/1 monospace;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+        .selected-video {
+            padding: 24px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 16px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(10,11,13,.98),
+                    rgba(3,4,5,.99)
+                );
+        }
+
+        .selected-video-kicker {
+            color: var(--red);
+
+            font:
+                800 11px/1 monospace;
+
+            letter-spacing: 1.3px;
+
+            text-transform: uppercase;
+        }
+
+        .selected-video h3 {
+            margin-top: 10px;
+
+            font-size:
+                clamp(22px, 3vw, 30px);
+
+            letter-spacing: -.7px;
+        }
+
+        .selected-video-description {
+            margin-top: 8px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+        .prompt-items {
+            display: grid;
+
+            gap: 12px;
+
+            margin-top: 20px;
+        }
+
+        .prompt-item {
+            padding: 18px;
+
+            border:
+                1px solid rgba(255,255,255,.07);
+
+            border-radius: 13px;
+
+            background: #050607;
+        }
+
+        .prompt-item-top {
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items: center;
+
+            gap: 12px;
+
+            margin-bottom: 11px;
+        }
+
+        .prompt-item-title {
+            font-size: 15px;
+        }
+
+        .prompt-item-label {
+            color: var(--red);
+
+            font:
+                700 10px/1 monospace;
+
+            letter-spacing: 1px;
+
+            white-space: nowrap;
+        }
+
+        .prompt-code {
+            padding: 15px;
+
+            border:
+                1px solid rgba(255,255,255,.06);
+
+            border-radius: 10px;
+
+            color: #cbd2da;
+
+            font:
+                12px/1.7
+                ui-monospace,
+                SFMono-Regular,
+                Menlo,
+                Consolas,
+                monospace;
+
+            white-space: pre-wrap;
+
+            word-break: break-word;
+
+            max-height: 280px;
+
+            overflow: auto;
+        }
+
+        .prompt-link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+
+            padding: 14px 15px;
+
+            border:
+                1px solid rgba(255,255,255,.08);
+
+            border-radius: 11px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(227,27,35,.07),
+                    rgba(8,9,11,.96)
+                );
+        }
+
+        .prompt-link-meta {
+            min-width: 0;
+        }
+
+        .prompt-link-label {
+            display: block;
+
+            color: #f4f5f7;
+
+            font:
+                800 11px/1.2 monospace;
+
+            letter-spacing: .8px;
+
+            text-transform: uppercase;
+        }
+
+        .prompt-link-url {
+            display: block;
+
+            margin-top: 5px;
+
+            color: #7f8994;
+
+            font:
+                11px/1.4 monospace;
+
+            white-space: nowrap;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+        }
+
+        .prompt-link-icon {
+            flex: 0 0 auto;
+
+            width: 32px;
+            height: 32px;
+
+            display: grid;
+            place-items: center;
+
+            border:
+                1px solid rgba(255,255,255,.10);
+
+            border-radius: 8px;
+
+            color: #fff;
+
+            background: rgba(255,255,255,.04);
+
+            font-size: 14px;
+        }
+
+        .prompt-footer {
+            display: flex;
+
+            justify-content: flex-end;
+
+            gap: 9px;
+
+            flex-wrap: wrap;
+
+            margin-top: 12px;
+        }
+
+        .prompt-footer .button {
+            min-height: 40px;
+
+            color: #fff;
+        }
+
+        .copy-prompt {
+            color: #fff !important;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(227,27,35,.92),
+                    rgba(143,14,22,.96)
+                );
+
+            border-color:
+                rgba(227,27,35,.95);
+
+            box-shadow:
+                0 8px 24px rgba(227,27,35,.12);
+        }
+
+        .copy-prompt:hover {
+            color: #fff !important;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f0262e,
+                    #b3121d
+                );
+
+            border-color: #f0262e;
+        }
+
+        .prompt-doc-link {
+            border-color: rgba(255,255,255,.10);
+
+            background:
+                linear-gradient(135deg, rgba(255,255,255,.055), rgba(8,9,11,.96));
+
+            color: #dfe4ea;
+        }
+
+        .prompt-doc-link:hover {
+            color: #fff;
+
+            border-color: rgba(255,255,255,.24);
+
+            box-shadow: 0 0 22px rgba(255,255,255,.05);
+        }
+
+        .prompt-doc-missing {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40px;
+            padding: 10px 14px;
+            border: 1px dashed rgba(255,255,255,.12);
+            border-radius: 9px;
+            color: #727b86;
+            font: 700 10px/1.2 monospace;
+            letter-spacing: .7px;
+            text-transform: uppercase;
+        }
+
+        .copy-prompt {
+            cursor: pointer;
+        }
+
+        .copy-prompt.copied {
+            border-color:
+                rgba(227,27,35,.50);
+
+            color: #ffb5b7;
+        }
+
+        .prompt-empty {
+            padding:
+                40px 25px;
+
+            border:
+                1px dashed #2b333d;
+
+            border-radius: 16px;
+
+            text-align: center;
+
+            color: var(--muted);
+
+            background:
+                rgba(8,9,11,.55);
+        }
+
+
+        /* =========================
+           BACK TO TOP
+        ========================= */
+
+        #back-to-top {
+            position: fixed;
+
+            right: 24px;
+            bottom: 24px;
+
+            z-index: 100;
+
+            width: 48px;
+            height: 48px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(227,27,35,.40);
+
+            background:
+                rgba(8,9,11,.94);
+
+            color: #fff;
+
+            box-shadow:
+                0 10px 35px
+                rgba(0,0,0,.35);
+
+            cursor: pointer;
+
+            opacity: 0;
+            visibility: hidden;
+
+            transform:
+                translateY(12px);
+
+            transition:
+                .25s ease;
+
+            backdrop-filter:
+                blur(12px);
+
+            font-size: 18px;
+        }
+
+        #back-to-top:hover {
+            transform:
+                translateY(-2px);
+
+            border-color:
+                var(--red);
+
+            box-shadow:
+                0 0 28px
+                rgba(227,27,35,.15);
+        }
+
+        #back-to-top.show {
+            opacity: 1;
+
+            visibility: visible;
+
+            transform:
+                translateY(0);
         }
 
 
@@ -1154,112 +1830,260 @@
 
         @media(max-width: 800px) {
 
-
-            .nav-links {
-
-                display: none;
-
+            header.container {
+                width: 94%;
             }
-
 
             nav {
-
                 height: 70px;
-
             }
 
+            .nav-links {
+                display: none;
+            }
+
+            .nav-cta {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: inline-flex;
+            }
+
+            .mobile-nav {
+                display: grid;
+
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+
+                gap: 8px;
+
+                padding: 10px;
+
+                margin:
+                    0 0 10px;
+
+                border:
+                    1px solid var(--border);
+
+                border-top: 0;
+
+                border-radius:
+                    0 0 14px 14px;
+
+                background:
+                    rgba(8,10,14,.98);
+
+                box-shadow:
+                    0 18px 40px
+                    rgba(0,0,0,.34);
+
+                overflow: hidden;
+
+                max-height: 0;
+                opacity: 0;
+
+                transform:
+                    translateY(-5px);
+
+                pointer-events: none;
+
+                transition:
+                    max-height .25s ease,
+                    opacity .2s ease,
+                    transform .2s ease;
+            }
+
+            .mobile-nav.open {
+                max-height: 300px;
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+
+                pointer-events: auto;
+            }
+
+            .mobile-nav a {
+                display: block;
+
+                padding:
+                    12px 13px;
+
+                border:
+                    1px solid
+                    rgba(255,255,255,.06);
+
+                border-radius: 9px;
+
+                color: #cbd2da;
+
+                font:
+                    700 12px/1.2 monospace;
+
+                background: #07090c;
+            }
+
+            .mobile-nav a:hover,
+            .mobile-nav a:focus-visible {
+                color: #fff;
+
+                border-color:
+                    rgba(229,57,53,.5);
+
+                background:
+                    rgba(229,57,53,.08);
+
+                outline: none;
+            }
 
             .hero {
-
                 grid-template-columns: 1fr;
 
-                padding-top: 50px;
+                min-height: auto;
 
+                padding:
+                    46px 0 62px;
             }
 
+            section {
+                padding: 68px 0;
+            }
+
+            .section-heading {
+                margin-bottom: 28px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+            }
+
+            .actions .button {
+                width: 100%;
+            }
 
             .rat {
-
                 width: 280px;
-
                 height: 280px;
-
             }
-
 
             .eye {
-
                 top: 105px;
-
             }
-
 
             .eye-left {
-
                 left: 55px;
-
             }
-
 
             .eye-right {
-
                 right: 55px;
-
             }
-
 
             .snout {
-
                 top: 145px;
-
             }
-
 
             .services,
-
             .process {
-
                 grid-template-columns: 1fr;
-
             }
 
+            .prompt-browser {
+                grid-template-columns: 1fr;
+            }
+
+            .video-list {
+                position: static;
+            }
+
+            .video-list .video-link {
+                display: inline-block;
+
+                width: auto;
+
+                min-width: 180px;
+
+                margin-right: 6px;
+            }
+
+            .service-tabs {
+                display: grid;
+
+                grid-template-columns:
+                    repeat(2, minmax(0,1fr));
+            }
+
+            .service-tab {
+                width: 100%;
+                min-height: 46px;
+            }
+
+            #back-to-top {
+                right: 16px;
+                bottom: 16px;
+            }
 
             h1 {
-
                 letter-spacing: -3px;
-
             }
-
-
-            #pricing .service-number {
-
-                font-size: 30px;
-
-            }
-
-
-            .price {
-
-                font-size: 36px;
-
-            }
-
 
             footer {
-
                 flex-direction: column;
-
             }
-
 
             .contact-details {
-
                 flex-direction: column;
-
                 gap: 12px;
+            }
+        }
 
+
+        @media(max-width: 480px) {
+
+            .logo-image {
+                width: 118px;
+                height: 38px;
             }
 
+            .service-tabs {
+                grid-template-columns: 1fr;
+            }
+
+            .mobile-nav {
+                grid-template-columns: 1fr;
+            }
+
+            .prompt-toolbar {
+                align-items: stretch;
+            }
+
+            .prompt-toolbar .button {
+                width: 100%;
+            }
+
+            .selected-video {
+                padding: 18px;
+            }
+
+            .prompt-item {
+                padding: 15px;
+            }
+
+            .prompt-link-card {
+                align-items: flex-start;
+            }
+
+            .prompt-item-top {
+                align-items: flex-start;
+
+                flex-direction: column;
+            }
+
+            .loader-panel {
+                padding:
+                    30px 20px 24px;
+            }
         }
 
     </style>
@@ -1267,8 +2091,55 @@
 </head>
 
 
+<body class="loading-lock">
 
-<body>
+
+<!-- =========================
+     LOADER
+========================= -->
+
+<div id="site-loader"
+     aria-label="Loading RatAI website">
+
+    <div class="loader-panel">
+
+        <div class="loader-logo">
+            RAT<span>AI</span>
+        </div>
+
+        <div class="loader-status">
+            Initializing digital workspace
+        </div>
+
+        <div class="loader-percent"
+             id="loader-percent">
+            0%
+        </div>
+
+        <div class="loader-track"
+             aria-hidden="true">
+
+            <div class="loader-fill"
+                 id="loader-fill"></div>
+
+        </div>
+
+        <div class="loader-terminal">
+
+            <span>&gt;</span>
+            loading interface_modules...<br>
+
+            <span>&gt;</span>
+            checking service_matrix...<br>
+
+            <span>&gt;</span>
+            preparing prompt_lab...
+
+        </div>
+
+    </div>
+
+</div>
 
 
 <!-- =========================
@@ -1279,10 +2150,13 @@
 
     <nav>
 
+        <a href="#"
+           class="logo logo-image"
+           aria-label="RatAI home">
 
-        <a href="#" class="logo">
-
-            RAT<span>AI</span>
+            <img
+                src="assets/branding/RatAI-navbar-logo.png"
+                alt="RatAI logo">
 
         </a>
 
@@ -1293,12 +2167,8 @@
                 Services
             </a>
 
-            <a href="#pricing">
-                Pricing
-            </a>
-
-            <a href="#packages">
-                Packages
+            <a href="#prompts">
+                Prompts
             </a>
 
             <a href="#process">
@@ -1321,19 +2191,69 @@
         </div>
 
 
-        <a
-            href="#contact"
-            class="button">
+        <div class="nav-actions">
 
-            Get Started
+            <a
+                href="#contact"
+                class="button nav-cta">
 
-        </a>
+                Get Started
 
+            </a>
+
+
+            <button
+                class="mobile-menu-toggle"
+                id="mobile-menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-nav">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
 
     </nav>
 
-</header>
 
+    <div
+        class="mobile-nav"
+        id="mobile-nav"
+        aria-hidden="true">
+
+        <a href="#services">
+            Services
+        </a>
+
+        <a href="#prompts">
+            Prompts
+        </a>
+
+        <a href="#process">
+            How it works
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+        <a
+            href="https://www.instagram.com/rat.ai.28/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Instagram
+
+        </a>
+
+    </div>
+
+</header>
 
 
 <main>
@@ -1345,37 +2265,24 @@
 
 <section class="container hero">
 
-
     <div>
 
-
         <div class="eyebrow">
-
             RAT_AI://HELP_DESK
-
         </div>
 
-
         <h1>
-
             Small fixes.<br>
-
             <span>Smart solutions.</span>
-
         </h1>
 
-
         <p class="hero-text">
-
             RatAI helps individuals, students and small businesses
-            with affordable digital tasks — from website fixes and
+            with digital tasks — from website fixes and
             CVs to AI-assisted content and business materials.
-
         </p>
 
-
         <div class="actions">
-
 
             <a
                 href="#services"
@@ -1385,66 +2292,50 @@
 
             </a>
 
-
             <a
-                href="#pricing"
+                href="#prompts"
                 class="button">
 
-                View Pricing
+                Open Prompt Lab
 
             </a>
 
-
         </div>
-
 
         <div class="terminal">
 
-            <span>></span>
+            <span>&gt;</span>
             problem_detected<br>
 
-            <span>></span>
+            <span>&gt;</span>
             identifying_solution...<br>
 
-            <span>></span>
-            affordable_fix_ready_
+            <span>&gt;</span>
+            affordable_fix_ready_<br>
 
-        </div>
-
-
-    </div>
-
-
-
-    <!-- RAT -->
-
-    <div class="rat-container">
-
-        <div class="rat">
-
-            <div class="ear ear-left"></div>
-
-            <div class="ear ear-right"></div>
-
-            <div class="eye eye-left"></div>
-
-            <div class="eye eye-right"></div>
-
-            <div class="snout">
-
-                <div class="nose"></div>
-
-            </div>
-
-            <div class="machine"></div>
+            <span>&gt;</span>
+            ratai_identity_loaded_
 
         </div>
 
     </div>
 
+
+    <!-- RAT_AI BRAND IDENTITY -->
+
+    <div class="rat-container brand-visual-container">
+
+        <div class="brand-visual-frame">
+<img
+                class="brand-visual"
+                src="./assets/branding/RatAI-identity-hero.png"
+                alt="RatAI futuristic cybernetic rat brand identity">
+
+        </div>
+
+    </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1455,1182 +2346,342 @@
 
     <div class="container">
 
-
         <div class="section-heading">
 
             <div class="eyebrow">
-
                 01 / WHAT WE DO
-
             </div>
 
-
             <h2>
-
-                Small tasks.<br>
-
-                Done quickly.
-
+                Choose a lane.<br>
+                We handle the rest.
             </h2>
 
-
             <p>
-
-                RatAI focuses on affordable digital tasks that
-                individuals and small businesses often don't want
-                to spend hours doing themselves.
-
+                Services are grouped by what you actually need,
+                keeping the experience simple and professional.
+                Final scope is confirmed after we review your request.
             </p>
 
         </div>
 
-
-
-        <div class="services">
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    WEB_01
-                </div>
-
-                <h3>
-                    Website Text Change
-                </h3>
-
-                <p>
-                    Update headings, paragraphs, buttons,
-                    product information and other website text.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    WEB_02
-                </div>
-
-                <h3>
-                    Button / Link Addition
-                </h3>
-
-                <p>
-                    Add buttons, navigation links and
-                    call-to-action elements.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    WEB_03
-                </div>
-
-                <h3>
-                    Color / Style Change
-                </h3>
-
-                <p>
-                    Change website colors, backgrounds,
-                    buttons, borders and styling.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    WEB_04
-                </div>
-
-                <h3>
-                    Broken Link Fix
-                </h3>
-
-                <p>
-                    Find and repair broken or incorrect
-                    website links.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    WEB_05
-                </div>
-
-                <h3>
-                    HTML / CSS Fix
-                </h3>
-
-                <p>
-                    Fix spacing, layouts, styling problems
-                    and small front-end bugs.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    WEB_06
-                </div>
-
-                <h3>
-                    Mobile Responsiveness Fix
-                </h3>
-
-                <p>
-                    Fix websites that don't display properly
-                    on phones and tablets.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    WEB_07
-                </div>
-
-                <h3>
-                    Google Maps
-                </h3>
-
-                <p>
-                    Add a Google Maps location to your
-                    business or contact page.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    WEB_08
-                </div>
-
-                <h3>
-                    Contact Form
-                </h3>
-
-                <p>
-                    Add a simple contact form so visitors
-                    can contact your business.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    WEB_09
-                </div>
-
-                <h3>
-                    Static Website Deployment
-                </h3>
-
-                <p>
-                    Deploy static HTML, CSS and JavaScript
-                    websites online.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    WEB_10
-                </div>
-
-                <h3>
-                    Complete Responsive Improvement
-                </h3>
-
-                <p>
-                    Improve your complete website experience
-                    across mobile, tablet and desktop.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    CAREER_01
-                </div>
-
-                <h3>
-                    CV / Resume
-                </h3>
-
-                <p>
-                    Create a clean, professional and
-                    ATS-friendly resume.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    CAREER_02
-                </div>
-
-                <h3>
-                    LinkedIn Makeover
-                </h3>
-
-                <p>
-                    Improve your LinkedIn headline,
-                    About section and professional profile.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    CAREER_03
-                </div>
-
-                <h3>
-                    Cover Letter
-                </h3>
-
-                <p>
-                    Get a professional customized
-                    cover letter.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    CAREER_04
-                </div>
-
-                <h3>
-                    Portfolio Website
-                </h3>
-
-                <p>
-                    A simple website to showcase your skills,
-                    projects and work.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    BUSINESS_01
-                </div>
-
-                <h3>
-                    Digital Menu
-                </h3>
-
-                <p>
-                    Create a mobile-friendly digital menu
-                    for restaurants and small businesses.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    BUSINESS_02
-                </div>
-
-                <h3>
-                    Business QR Page
-                </h3>
-
-                <p>
-                    Create a simple QR-accessible page
-                    containing business information.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    BUSINESS_03
-                </div>
-
-                <h3>
-                    Business Flyer
-                </h3>
-
-                <p>
-                    Create a promotional flyer for your
-                    business, product or service.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    BUSINESS_04
-                </div>
-
-                <h3>
-                    Product Descriptions
-                </h3>
-
-                <p>
-                    Write clear and engaging product
-                    descriptions using AI-assisted workflows.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    DATA_01
-                </div>
-
-                <h3>
-                    PDF → Word / Excel
-                </h3>
-
-                <p>
-                    Convert documents into editable
-                    Word or Excel files.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    DATA_02
-                </div>
-
-                <h3>
-                    Excel Cleanup
-                </h3>
-
-                <p>
-                    Clean, organize and format messy
-                    spreadsheets and data.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    DATA_03
-                </div>
-
-                <h3>
-                    PPT Creation
-                </h3>
-
-                <p>
-                    Create clean presentations for
-                    college, work or business.
-                </p>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     DISCOUNTED PRICING
-========================= -->
-
-<section id="pricing">
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <div class="eyebrow">
-
-                02 / DISCOUNTED PRICING
-
-            </div>
-
-
-            <h2>
-
-                Already discounted.<br>
-
-                No agency pricing.
-
-            </h2>
-
-
-            <p>
-
-                Small tasks at transparent, upfront prices.
-                No hidden charges and no complicated agency quotes.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="services">
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹79
-                </div>
-
-                <h3>
-                    Website Text Change
-                </h3>
-
-                <p>
-                    Update headings, paragraphs, buttons,
-                    product information and other website text.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹99
-                </div>
-
-                <h3>
-                    Button / Link Addition
-                </h3>
-
-                <p>
-                    Add buttons, navigation links and
-                    call-to-action elements.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹129
-                </div>
-
-                <h3>
-                    Color / Style Change
-                </h3>
-
-                <p>
-                    Change website colors, backgrounds,
-                    buttons, borders and styling.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹129
-                </div>
-
-                <h3>
-                    Broken Link Fix
-                </h3>
-
-                <p>
-                    Find and repair broken or incorrect
-                    website links.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹199–₹599
-                </div>
-
-                <h3>
-                    HTML / CSS Fix
-                </h3>
-
-                <p>
-                    Fix spacing, layouts, styling problems
-                    and small front-end bugs.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹249–₹499
-                </div>
-
-                <h3>
-                    Mobile Responsiveness Fix
-                </h3>
-
-                <p>
-                    Fix websites that don't display properly
-                    on phones and tablets.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹199
-                </div>
-
-                <h3>
-                    Google Maps
-                </h3>
-
-                <p>
-                    Add a Google Maps location to your
-                    business or contact page.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹249
-                </div>
-
-                <h3>
-                    Contact Form
-                </h3>
-
-                <p>
-                    Add a simple contact form so visitors
-                    can contact your business.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹299
-                </div>
-
-                <h3>
-                    Static Website Deployment
-                </h3>
-
-                <p>
-                    Deploy static HTML, CSS and JavaScript
-                    websites online.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹399
-                </div>
-
-                <h3>
-                    Complete Responsive Improvement
-                </h3>
-
-                <p>
-                    Improve your complete website experience
-                    across mobile, tablet and desktop.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹149
-                </div>
-
-                <h3>
-                    CV / Resume
-                </h3>
-
-                <p>
-                    Professional and ATS-friendly resume
-                    designed for job applications.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹149
-                </div>
-
-                <h3>
-                    LinkedIn Makeover
-                </h3>
-
-                <p>
-                    Improve your LinkedIn headline,
-                    About section and professional profile.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹59
-                </div>
-
-                <h3>
-                    Cover Letter
-                </h3>
-
-                <p>
-                    Professional customized cover letter
-                    for your job application.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹499
-                </div>
-
-                <h3>
-                    Portfolio Website
-                </h3>
-
-                <p>
-                    A simple personal website to showcase
-                    your skills, projects and work.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹299
-                </div>
-
-                <h3>
-                    Digital Menu
-                </h3>
-
-                <p>
-                    Mobile-friendly digital menu.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹249
-                </div>
-
-                <h3>
-                    Business QR Page
-                </h3>
-
-                <p>
-                    QR-accessible business information page.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹149
-                </div>
-
-                <h3>
-                    Business Flyer
-                </h3>
-
-                <p>
-                    Promotional business flyer.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹99+
-                </div>
-
-                <h3>
-                    Product Descriptions
-                </h3>
-
-                <p>
-                    AI-assisted product copywriting.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹99+
-                </div>
-
-                <h3>
-                    PDF → Word / Excel
-                </h3>
-
-                <p>
-                    Convert documents into editable formats.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹149+
-                </div>
-
-                <h3>
-                    Excel Cleanup
-                </h3>
-
-                <p>
-                    Clean and organize spreadsheets.
-                </p>
-
-            </article>
-
-
-            <article class="service">
-
-                <div class="service-number">
-                    ₹249+
-                </div>
-
-                <h3>
-                    PPT Creation
-                </h3>
-
-                <p>
-                    Professional presentation creation.
-                </p>
-
-            </article>
-
-
-        </div>
-
-
-        <!-- PRICING CTA -->
 
         <div
-            class="price-box"
-            style="margin-top:40px;">
+            class="service-tabs"
+            role="tablist"
+            aria-label="RatAI service categories">
 
-            <div class="eyebrow">
+            <button
+                class="service-tab active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-web"
+                data-target="panel-web">
 
-                RAT_AI://LOWEST_PRICE
+                WEB_&_TECH
 
-            </div>
+            </button>
 
+            <button
+                class="service-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-career"
+                data-target="panel-career">
 
-            <h3>
+                CAREER
 
-                Need more than one thing?
+            </button>
 
-            </h3>
+            <button
+                class="service-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-business"
+                data-target="panel-business">
 
+                BUSINESS_&_CONTENT
 
-            <p class="price-description">
+            </button>
 
-                Check out our bundle packages and save even more
-                compared with ordering individual services.
+            <button
+                class="service-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-data"
+                data-target="panel-data">
 
-            </p>
+                DATA_&_PRODUCTIVITY
 
-
-            <a
-                href="#packages"
-                class="button button-primary">
-
-                View Bundle Packages →
-
-            </a>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     PACKAGES
-========================= -->
-
-<section
-    id="packages"
-    class="price-section">
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <div class="eyebrow">
-
-                03 / BUNDLE & SAVE
-
-            </div>
-
-
-            <h2>
-
-                Bundle it.<br>
-
-                Pay less.
-
-            </h2>
-
-
-            <p>
-
-                Need multiple services?
-                Choose a starter package and save
-                compared with ordering separately.
-
-            </p>
+            </button>
 
         </div>
 
 
-
-        <div class="services">
-
-
-            <!-- JOB STARTER -->
-
-            <article class="service">
-
-                <div class="service-number">
-
-                    PACKAGE_01
-
-                </div>
-
-
-                <h3>
-
-                    Job Starter
-
-                </h3>
-
-
-                <p>
-
-                    CV / Resume +
-                    LinkedIn Makeover +
-                    Cover Letter
-
-                </p>
-
-
-                <div class="price">
-
-                    ₹249
-
-                </div>
-
-
-                <p>
-
-                    <s>
-                        Individual value: ₹357
-                    </s>
-
-                    <br>
-
-                    <strong>
-                        Save ₹108
-                    </strong>
-
-                </p>
-
-
-                <br>
-
-
-                <a
-                    href="#contact"
-                    class="button button-primary">
-
-                    Get This Pack →
-
-                </a>
-
-            </article>
-
-
-
-            <!-- WEBSITE FIX -->
-
-            <article class="service">
-
-                <div class="service-number">
-
-                    PACKAGE_02
-
-                </div>
-
-
-                <h3>
-
-                    Website Fix Pack
-
-                </h3>
-
-
-                <p>
-
-                    Any 3 small website fixes.
-
-                </p>
-
-
-                <div class="price">
-
-                    ₹399
-
-                </div>
-
-
-                <p>
-
-                    <s>
-                        Individual pricing
-                    </s>
-
-                    <br>
-
-                    <strong>
-                        Bundle pricing
-                    </strong>
-
-                </p>
-
-
-                <br>
-
-
-                <a
-                    href="#contact"
-                    class="button button-primary">
-
-                    Get This Pack →
-
-                </a>
-
-            </article>
-
-
-
-            <!-- BUSINESS -->
-
-            <article class="service">
-
-                <div class="service-number">
-
-                    PACKAGE_03
-
-                </div>
-
-
-                <h3>
-
-                    Business Starter
-
-                </h3>
-
-
-                <p>
-
-                    Digital Menu +
-                    Business QR Page +
-                    Business Flyer
-
-                </p>
-
-
-                <div class="price">
-
-                    ₹599
-
-                </div>
-
-
-                <p>
-
-                    <s>
-                        Individual value: ₹697
-                    </s>
-
-                    <br>
-
-                    <strong>
-                        Save ₹98
-                    </strong>
-
-                </p>
-
-
-                <br>
-
-
-                <a
-                    href="#contact"
-                    class="button button-primary">
-
-                    Get This Pack →
-
-                </a>
-
-            </article>
-
-
-
-            <!-- SOCIAL -->
-
-            <article class="service">
-
-                <div class="service-number">
-
-                    PACKAGE_04
-
-                </div>
-
-
-                <h3>
-
-                    Social Starter
-
-                </h3>
-
-
-                <p>
-
-                    5 social posts +
-                    5 captions +
-                    profile bio
-
-                </p>
-
-
-                <div class="price">
-
-                    ₹299
-
-                </div>
-
-
-                <p>
-
-                    <s>
-                        Regular value ₹399+
-                    </s>
-
-                    <br>
-
-                    <strong>
-                        Save more with the pack
-                    </strong>
-
-                </p>
-
-
-                <br>
-
-
-                <a
-                    href="#contact"
-                    class="button button-primary">
-
-                    Get This Pack →
-
-                </a>
-
-            </article>
-
+        <!-- WEB -->
+
+        <div
+            id="panel-web"
+            class="service-panel active"
+            role="tabpanel">
+
+            <p class="service-panel-note">
+                Websites, front-end fixes, forms, deployment and practical improvements.
+            </p>
+
+            <div class="services">
+
+                <article class="service">
+                    <div class="service-number">WEB_01</div>
+                    <h3>Website Text Change</h3>
+                    <p>
+                        Update headings, paragraphs, buttons, product information and other website text.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">WEB_02</div>
+                    <h3>Button / Link Addition</h3>
+                    <p>
+                        Add buttons, navigation links and call-to-action elements.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">WEB_03</div>
+                    <h3>Color / Style Change</h3>
+                    <p>
+                        Change website colors, backgrounds, buttons, borders and styling.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">WEB_04</div>
+                    <h3>Broken Link Fix</h3>
+                    <p>
+                        Find and repair broken or incorrect website links.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">WEB_05</div>
+                    <h3>HTML / CSS Fix</h3>
+                    <p>
+                        Fix spacing, layouts, styling problems and small front-end bugs.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">WEB_06</div>
+                    <h3>Mobile Responsiveness Fix</h3>
+                    <p>
+                        Fix websites that don't display properly on phones and tablets.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">WEB_07</div>
+                    <h3>Google Maps</h3>
+                    <p>
+                        Add a Google Maps location to your business or contact page.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">WEB_08</div>
+                    <h3>Contact Form</h3>
+                    <p>
+                        Add a simple contact form so visitors can contact your business.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">WEB_09</div>
+                    <h3>Static Website Deployment</h3>
+                    <p>
+                        Deploy static HTML, CSS and JavaScript websites online.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">WEB_10</div>
+                    <h3>Complete Responsive Improvement</h3>
+                    <p>
+                        Improve the complete website experience across mobile, tablet and desktop.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">WEB_11</div>
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A simple website to showcase skills, projects and work.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- CAREER -->
+
+        <div
+            id="panel-career"
+            class="service-panel"
+            role="tabpanel">
+
+            <p class="service-panel-note">
+                Job-ready materials for applications, profiles and professional positioning.
+            </p>
+
+            <div class="services">
+
+                <article class="service">
+                    <div class="service-number">CAREER_01</div>
+                    <h3>CV / Resume</h3>
+                    <p>
+                        Create a clean, professional and ATS-friendly resume.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">CAREER_02</div>
+                    <h3>LinkedIn Makeover</h3>
+                    <p>
+                        Improve your LinkedIn headline, About section and professional profile.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">CAREER_03</div>
+                    <h3>Cover Letter</h3>
+                    <p>
+                        Get a professional customized cover letter for your application.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">CAREER_04</div>
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        Build a focused portfolio presence for skills, projects and work.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- BUSINESS -->
+
+        <div
+            id="panel-business"
+            class="service-panel"
+            role="tabpanel">
+
+            <p class="service-panel-note">
+                Practical digital assets for small businesses, products and social presence.
+            </p>
+
+            <div class="services">
+
+                <article class="service">
+                    <div class="service-number">BUSINESS_01</div>
+                    <h3>Digital Menu</h3>
+                    <p>
+                        Create a mobile-friendly digital menu for restaurants and small businesses.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">BUSINESS_02</div>
+                    <h3>Business QR Page</h3>
+                    <p>
+                        Create a simple QR-accessible page containing key business information.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">BUSINESS_03</div>
+                    <h3>Business Flyer</h3>
+                    <p>
+                        Create a promotional flyer for a business, product or service.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">BUSINESS_04</div>
+                    <h3>Product Descriptions</h3>
+                    <p>
+                        Write clear and engaging product descriptions using AI-assisted workflows.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">BUSINESS_05</div>
+                    <h3>Social Content</h3>
+                    <p>
+                        Create social-ready posts, captions and profile copy for a stronger digital presence.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">BUSINESS_06</div>
+                    <h3>AI Instagram Ad / Storyboard</h3>
+                    <p>
+                        Create scroll-stopping Instagram ad concepts, scene-by-scene storyboards and AI-ready visual direction for products or services.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- DATA -->
+
+        <div
+            id="panel-data"
+            class="service-panel"
+            role="tabpanel">
+
+            <p class="service-panel-note">
+                Documents, spreadsheets and presentation work cleaned up into useful deliverables.
+            </p>
+
+            <div class="services">
+
+                <article class="service">
+                    <div class="service-number">DATA_01</div>
+                    <h3>PDF → Word / Excel</h3>
+                    <p>
+                        Convert documents into editable Word or Excel files.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">DATA_02</div>
+                    <h3>Excel Cleanup</h3>
+                    <p>
+                        Clean, organize and format messy spreadsheets and data.
+                    </p>
+                </article>
+
+                <article class="service">
+                    <div class="service-number">DATA_03</div>
+                    <h3>PPT Creation</h3>
+                    <p>
+                        Create clean presentations for college, work or business.
+                    </p>
+                </article>
+
+            </div>
 
         </div>
 
@@ -2638,49 +2689,114 @@
         <!-- CUSTOM REQUEST -->
 
         <div
-            class="price-box"
+            class="quote-box"
             style="margin-top:40px;">
 
-
             <div class="eyebrow">
-
                 RAT_AI://CUSTOM_REQUEST
-
             </div>
 
-
             <h3>
-
-                Need something different?
-
+                Have a task that doesn't fit a category?
             </h3>
 
-
-            <p class="price-description">
-
-                Don't see exactly what you need?
-                Send us the task and we'll give you
-                a clear price before starting.
-
+            <p class="quote-description">
+                Send the requirement, file or website link.
+                We'll review the scope and confirm the final quote before work begins.
             </p>
-
 
             <a
                 href="#contact"
                 class="button button-primary">
 
-                Ask for a Price →
+                Request a Quote →
 
             </a>
 
-
         </div>
-
 
     </div>
 
 </section>
 
+
+<!-- =========================
+     PROMPT LIBRARY
+========================= -->
+
+<section id="prompts">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                02 / PROMPT LAB
+            </div>
+
+            <h2>
+                One video.<br>
+                Its prompts.
+            </h2>
+
+            <p>
+                Select a video from the list to access its prompt link.
+                Use <strong>Copy Link</strong> to copy the Google Docs URL or <strong>Open Prompt Document ↗</strong> to open it directly.
+            </p>
+
+        </div>
+
+
+        <div class="prompt-browser">
+
+            <aside
+                class="video-list"
+                aria-label="Instagram videos">
+
+                <div class="video-list-label">
+                    Video index
+                </div>
+
+                <div id="video-list-items"></div>
+
+            </aside>
+
+
+            <div class="prompt-viewer">
+
+                <div class="prompt-toolbar">
+
+                    <div
+                        class="prompt-count"
+                        id="prompt-count">
+
+                        LOADING VIDEO...
+
+                    </div>
+
+                    <a
+                        href="#contact"
+                        class="button">
+
+                        Need a custom prompt?
+
+                    </a>
+
+                </div>
+
+
+                <div
+                    id="selected-video"
+                    class="selected-video"
+                    aria-live="polite"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 <!-- =========================
@@ -2691,124 +2807,83 @@
 
     <div class="container">
 
-
         <div class="section-heading">
 
             <div class="eyebrow">
-
-                04 / HOW IT WORKS
-
+                03 / HOW IT WORKS
             </div>
 
-
             <h2>
-
                 No complicated process.
-
             </h2>
 
-
             <p>
-
                 Tell us what you need.
                 We handle the task.
-
             </p>
 
         </div>
 
 
-
         <div class="process">
 
-
             <div class="process-card">
 
                 <strong>
-
                     01 / SEND
-
                 </strong>
 
-
                 <h3>
-
                     Tell us what you need
-
                 </h3>
 
-
                 <p>
-
                     Send your website, document or requirement
                     through email or Instagram.
-
                 </p>
 
             </div>
 
 
-
             <div class="process-card">
 
                 <strong>
-
                     02 / QUOTE
-
                 </strong>
 
-
                 <h3>
-
-                    Get the price
-
+                    Confirm the scope
                 </h3>
 
-
                 <p>
-
-                    We'll check the task and confirm the final
-                    price before starting.
-
+                    We'll review the task and confirm the final
+                    scope before starting.
                 </p>
 
             </div>
 
 
-
             <div class="process-card">
 
                 <strong>
-
                     03 / DONE
-
                 </strong>
 
-
                 <h3>
-
                     Receive the result
-
                 </h3>
 
-
                 <p>
-
                     Review the completed work and receive
                     your final files or updated website.
-
                 </p>
 
             </div>
-
 
         </div>
 
 
-        <!-- CONTACT BUTTON -->
-
         <div class="process-contact">
-
 
             <a
                 href="#contact"
@@ -2818,14 +2893,11 @@
 
             </a>
 
-
         </div>
-
 
     </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -2838,26 +2910,17 @@
 
     <div class="container">
 
-
         <div class="cta-box">
 
-
             <div class="eyebrow">
-
                 RAT_AI://CONTACT
-
             </div>
 
-
             <h2>
-
                 Got a small digital problem?
-
             </h2>
 
-
             <p>
-
                 Website fix?
                 CV?
                 Portfolio?
@@ -2865,14 +2928,12 @@
                 AI-assisted task?
 
                 Tell RatAI what you need.
-
             </p>
 
 
             <div
                 class="actions"
                 style="justify-content:center;">
-
 
                 <a
                     href="mailto:heyratai1828@gmail.com?subject=RatAI%20Service%20Request"
@@ -2881,7 +2942,6 @@
                     Email RatAI →
 
                 </a>
-
 
                 <a
                     href="https://www.instagram.com/rat.ai.28/"
@@ -2893,12 +2953,10 @@
 
                 </a>
 
-
             </div>
 
 
             <div class="contact-details">
-
 
                 <a
                     href="mailto:heyratai1828@gmail.com">
@@ -2906,7 +2964,6 @@
                     📧 heyratai1828@gmail.com
 
                 </a>
-
 
                 <a
                     href="https://www.instagram.com/rat.ai.28/"
@@ -2917,7 +2974,6 @@
 
                 </a>
 
-
             </div>
 
 
@@ -2925,17 +2981,16 @@
                 class="terminal"
                 style="margin-top:25px;">
 
-                <span>></span>
+                <span>&gt;</span>
                 email: heyratai1828@gmail.com<br>
 
-                <span>></span>
+                <span>&gt;</span>
                 instagram: @rat.ai.28<br>
 
-                <span>></span>
+                <span>&gt;</span>
                 status: accepting_requests_
 
             </div>
-
 
         </div>
 
@@ -2947,23 +3002,18 @@
 </main>
 
 
-
 <!-- =========================
      FOOTER
 ========================= -->
 
 <footer class="container">
 
-
     <span>
-
         © 2026 RatAI
-
     </span>
 
 
     <span>
-
 
         <a
             href="mailto:heyratai1828@gmail.com">
@@ -2972,9 +3022,7 @@
 
         </a>
 
-
         &nbsp; | &nbsp;
-
 
         <a
             href="https://www.instagram.com/rat.ai.28/"
@@ -2985,14 +3033,1035 @@
 
         </a>
 
-
     </span>
 
-
 </footer>
+
+
+<!-- BACK TO TOP -->
+
+<button
+    id="back-to-top"
+    type="button"
+    aria-label="Back to top"
+    title="Back to top">
+
+    ↑
+
+</button>
+
+
+<script>
+
+(function () {
+
+    "use strict";
+
+
+    /* =====================================================
+       RAT_AI PROMPT LIBRARY
+
+       For each prompt, set:
+       documentUrl: "https://drive.google.com/..."
+
+       The website will open that document in a new tab.
+    ====================================================== */
+
+    const PROMPT_VIDEOS = [
+
+        {
+            id: "VIDEO_01",
+
+            title: "ZX10R",
+
+            command: "/blueprint/topdown/ridepov/partsflatlay",
+
+            description:
+                "Premium engineering-style ZX10R treatment for an uploaded subject.",
+
+            prompts: [
+
+                {
+                    title: "Prompt",
+
+                    // Paste the Google Drive / prompt-document URL here.
+                    documentUrl: "https://docs.google.com/document/d/10_he0YyJounNqO-_3I0g6KXBeGHYrkyDapB7tolPqSM/edit?usp=sharing",
+
+                    prompt:"										https://docs.google.com/document/d/10_he0YyJounNqO-_3I0g6KXBeGHYrkyDapB7tolPqSM/edit?usp=sharing"
+                }
+
+            ]
+        },
+
+
+        {
+            id: "VIDEO_02",
+
+            title: "Hayabusa",
+
+            command: "/explode/sketchblueprint/wiring/partsflatlay",
+
+            description:
+                "A clean, high-detail exploded assembly presentation of Hayabusa Bike",
+
+            prompts: [
+
+                {
+                    title: "Prompt",
+
+                    // Paste the Google Drive / prompt-document URL here.
+                    documentUrl: "https://docs.google.com/document/d/109jLZ7dIBrl-0RDdUlPvGV7dgC9ytz14vWBlWGprlMU/edit?usp=sharing",
+
+                    prompt:
+                        "										https://docs.google.com/document/d/109jLZ7dIBrl-0RDdUlPvGV7dgC9ytz14vWBlWGprlMU/edit?usp=sharing"
+                }
+
+            ]
+        },
+
+
+        {
+            id: "VIDEO_03",
+
+            title: "RX100",
+
+            command: "/explode/partsflatlay/wiring",
+
+            description:
+                "Technical blueprint-inspired presentation for visual breakdowns of RX100",
+
+            prompts: [
+
+                {
+                    title: "Prompt",
+
+                    // Paste the Google Drive / prompt-document URL here.
+                    documentUrl: "https://docs.google.com/document/d/1-B3p7rhMJHVyFva_zRbPoMShbvnHOiMZv3BBYcxeoJE/edit?usp=sharing",
+
+                    prompt:
+                        "					https://docs.google.com/document/d/1-B3p7rhMJHVyFva_zRbPoMShbvnHOiMZv3BBYcxeoJE/edit?usp=sharing"
+                }
+
+            ]
+        },
+
+
+        {
+            id: "VIDEO_04",
+
+            title: "Splendor",
+
+            command: "/explode/partsflatlay/wiring",
+
+            description:
+                "Structured schematic treatment for Splendor",
+
+            prompts: [
+
+                {
+                    title: "Prompt",
+
+                    // Paste the Google Drive / prompt-document URL here.
+                    documentUrl: "https://docs.google.com/document/d/11EpchPVdLWDuMIuL7Y3ajLrQivtPXjfLUdTN8Vreejk/edit?usp=sharing",
+
+                    prompt:
+                        "				https://docs.google.com/document/d/11EpchPVdLWDuMIuL7Y3ajLrQivtPXjfLUdTN8Vreejk/edit?usp=sharing"
+                }
+
+            ]
+        }
+
+    ];
+
+
+    let activeVideoIndex = 0;
+
+
+    /* =====================================================
+       ESCAPE HTML
+    ====================================================== */
+
+    function escapeHTML(value) {
+
+        return String(value)
+
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;")
+            .replaceAll("'", "&#039;");
+
+    }
+
+
+    /* =====================================================
+       PROMPT BROWSER
+    ====================================================== */
+
+    function renderPromptBrowser() {
+
+        const videoList =
+            document.getElementById("video-list-items");
+
+        const viewer =
+            document.getElementById("selected-video");
+
+        const count =
+            document.getElementById("prompt-count");
+
+
+        if (!videoList || !viewer || !count) {
+            return;
+        }
+
+
+        if (!PROMPT_VIDEOS.length) {
+
+            videoList.innerHTML = "";
+
+            viewer.innerHTML =
+                '<div class="prompt-empty">No videos added yet. Add entries inside <strong>PROMPT_VIDEOS</strong> in this file.</div>';
+
+            count.textContent =
+                "0 VIDEOS";
+
+            return;
+        }
+
+
+        activeVideoIndex =
+            Math.min(
+                activeVideoIndex,
+                PROMPT_VIDEOS.length - 1
+            );
+
+
+        videoList.innerHTML =
+            PROMPT_VIDEOS.map(
+                (video, index) => `
+
+                    <button
+                        type="button"
+                        class="video-link ${index === activeVideoIndex ? "active" : ""}"
+                        data-video-index="${index}">
+
+                        <span class="video-id">
+                            ${escapeHTML(
+                                video.id ||
+                                `VIDEO_${String(index + 1).padStart(2, "0")}`
+                            )}
+                        </span>
+
+                        ${escapeHTML(
+                            video.title ||
+                            "Untitled Video"
+                        )}
+
+                    </button>
+
+                `
+            ).join("");
+
+
+        const video =
+            PROMPT_VIDEOS[activeVideoIndex];
+
+
+        const prompts =
+            Array.isArray(video.prompts)
+                ? video.prompts
+                : [];
+
+
+        count.textContent =
+            `${prompts.length} ${
+                prompts.length === 1
+                    ? "PROMPT"
+                    : "PROMPTS"
+            } · ${video.id || "VIDEO"}`;
+
+
+        viewer.innerHTML = `
+
+            <div class="selected-video-kicker">
+
+                ${escapeHTML(video.command || "/prompt")}
+                ·
+                ${prompts.length}
+                ${prompts.length === 1 ? "PROMPT" : "PROMPTS"}
+
+            </div>
+
+
+            <h3>
+                ${escapeHTML(
+                    video.title ||
+                    "Untitled Video"
+                )}
+            </h3>
+
+
+            <p class="selected-video-description">
+
+                ${escapeHTML(
+                    video.description ||
+                    "Prompts used for this Instagram video."
+                )}
+
+            </p>
+
+
+            <div class="prompt-items">
+
+                ${
+                    prompts.length
+
+                        ? prompts.map(
+                            (item, promptIndex) => `
+
+                                <article class="prompt-item">
+
+                                    <div class="prompt-item-top">
+
+                                        <h4 class="prompt-item-title">
+
+                                            ${escapeHTML(
+                                                item.title ||
+                                                `Prompt ${promptIndex + 1}`
+                                            )}
+
+                                        </h4>
+
+                                        <div class="prompt-item-label">
+
+                                            PROMPT_${String(
+                                                promptIndex + 1
+                                            ).padStart(2, "0")}
+
+                                        </div>
+
+                                    </div>
+
+
+                                    ${
+                                        (item.documentUrl || item.prompt || "")
+                                            .toLowerCase()
+                                            .startsWith("http")
+                                            ? `
+                                                <div class="prompt-link-card">
+
+                                                    <div class="prompt-link-meta">
+
+                                                        <span class="prompt-link-label">
+                                                            Google Docs Prompt Link
+                                                        </span>
+
+                                                        <span class="prompt-link-url">
+                                                            ${escapeHTML(item.documentUrl || item.prompt || "")}
+                                                        </span>
+
+                                                    </div>
+
+                                                    <div class="prompt-link-icon" aria-hidden="true">
+                                                        ↗
+                                                    </div>
+
+                                                </div>
+                                            `
+                                            : `
+                                                <div class="prompt-code">
+
+                                                    ${escapeHTML(
+                                                        item.prompt || ""
+                                                    )}
+
+                                                </div>
+                                            `
+                                    }
+
+
+                                    <div class="prompt-footer">
+
+                                        <button
+                                            type="button"
+                                            class="button copy-prompt"
+                                            data-video-index="${activeVideoIndex}"
+                                            data-prompt-index="${promptIndex}">
+
+                                            Copy Link
+
+                                        </button>
+
+                                        ${
+                                            item.documentUrl
+                                                ? `
+                                                    <a
+                                                        class="button prompt-doc-link"
+                                                        href="${escapeHTML(item.documentUrl)}"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        aria-label="Open prompt document for ${escapeHTML(item.title || `Prompt ${promptIndex + 1}`)}">
+
+                                                        Open Prompt Document ↗
+
+                                                    </a>
+                                                `
+                                                : `
+                                                    <span
+                                                        class="prompt-doc-missing"
+                                                        title="Add the Google Drive URL in PROMPT_VIDEOS for this prompt.">
+
+                                                        Google Drive link not added
+
+                                                    </span>
+                                                `
+                                        }
+
+                                    </div>
+
+                                </article>
+
+                            `
+                        ).join("")
+
+                        :
+
+                        '<div class="prompt-empty">No prompts added for this video yet.</div>'
+                }
+
+            </div>
+
+        `;
+
+    }
+
+
+    async function copyVideoPrompt(
+        videoIndex,
+        promptIndex,
+        button
+    ) {
+
+        const item =
+            PROMPT_VIDEOS[videoIndex]
+            ?.prompts?.[promptIndex];
+
+
+        const text =
+            item?.documentUrl ||
+            item?.prompt ||
+            "";
+
+
+        if (!text) {
+            return;
+        }
+
+
+        try {
+
+            await navigator.clipboard.writeText(text);
+
+        } catch (error) {
+
+            const area =
+                document.createElement("textarea");
+
+            area.value = text;
+
+            area.style.position = "fixed";
+            area.style.opacity = "0";
+
+            document.body.appendChild(area);
+
+            area.select();
+
+            document.execCommand("copy");
+
+            area.remove();
+
+        }
+
+
+        const original =
+            button.textContent;
+
+
+        button.textContent =
+            "Copied ✓";
+
+        button.classList.add("copied");
+
+
+        window.setTimeout(() => {
+
+            button.textContent =
+                original;
+
+            button.classList.remove("copied");
+
+        }, 1400);
+
+    }
+
+
+    function initPromptBrowser() {
+
+        const videoList =
+            document.getElementById(
+                "video-list-items"
+            );
+
+        const viewer =
+            document.getElementById(
+                "selected-video"
+            );
+
+
+        if (!videoList || !viewer) {
+            return;
+        }
+
+
+        renderPromptBrowser();
+
+
+        videoList.addEventListener(
+            "click",
+            event => {
+
+                const link =
+                    event.target.closest(
+                        ".video-link"
+                    );
+
+
+                if (!link) {
+                    return;
+                }
+
+
+                activeVideoIndex =
+                    Number(
+                        link.dataset.videoIndex
+                    );
+
+
+                renderPromptBrowser();
+
+            }
+        );
+
+
+        viewer.addEventListener(
+            "click",
+            event => {
+
+                const button =
+                    event.target.closest(
+                        ".copy-prompt"
+                    );
+
+
+                if (!button) {
+                    return;
+                }
+
+
+                copyVideoPrompt(
+
+                    Number(
+                        button.dataset.videoIndex
+                    ),
+
+                    Number(
+                        button.dataset.promptIndex
+                    ),
+
+                    button
+
+                );
+
+            }
+        );
+
+    }
+
+
+    /* =====================================================
+       SERVICE TABS
+    ====================================================== */
+
+    function initServiceTabs() {
+
+        const tabs =
+            document.querySelectorAll(
+                ".service-tab"
+            );
+
+        const panels =
+            document.querySelectorAll(
+                ".service-panel"
+            );
+
+
+        tabs.forEach(tab => {
+
+            tab.addEventListener(
+                "click",
+                () => {
+
+                    const target =
+                        tab.getAttribute(
+                            "data-target"
+                        );
+
+
+                    tabs.forEach(item => {
+
+                        item.classList.remove(
+                            "active"
+                        );
+
+                        item.setAttribute(
+                            "aria-selected",
+                            "false"
+                        );
+
+                    });
+
+
+                    panels.forEach(panel => {
+
+                        panel.classList.remove(
+                            "active"
+                        );
+
+                    });
+
+
+                    tab.classList.add(
+                        "active"
+                    );
+
+                    tab.setAttribute(
+                        "aria-selected",
+                        "true"
+                    );
+
+
+                    const panel =
+                        document.getElementById(
+                            target
+                        );
+
+
+                    if (panel) {
+
+                        panel.classList.add(
+                            "active"
+                        );
+
+                    }
+
+                }
+            );
+
+        });
+
+    }
+
+
+    /* =====================================================
+       BACK TO TOP
+    ====================================================== */
+
+    function initBackToTop() {
+
+        const button =
+            document.getElementById(
+                "back-to-top"
+            );
+
+
+        if (!button) {
+            return;
+        }
+
+
+        const update = () => {
+
+            button.classList.toggle(
+                "show",
+                window.scrollY > 650
+            );
+
+        };
+
+
+        window.addEventListener(
+            "scroll",
+            update,
+            {
+                passive: true
+            }
+        );
+
+
+        update();
+
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+
+            }
+        );
+
+    }
+
+
+    /* =====================================================
+       MOBILE NAVIGATION
+       FIXED: THIS FUNCTION WAS MISSING
+    ====================================================== */
+
+    function initMobileNavigation() {
+
+        const toggle =
+            document.getElementById(
+                "mobile-menu-toggle"
+            );
+
+        const mobileNav =
+            document.getElementById(
+                "mobile-nav"
+            );
+
+
+        if (!toggle || !mobileNav) {
+            return;
+        }
+
+
+        toggle.addEventListener(
+            "click",
+            () => {
+
+                const isOpen =
+                    toggle.getAttribute(
+                        "aria-expanded"
+                    ) === "true";
+
+
+                const nextState =
+                    !isOpen;
+
+
+                toggle.setAttribute(
+                    "aria-expanded",
+                    String(nextState)
+                );
+
+
+                toggle.setAttribute(
+                    "aria-label",
+                    nextState
+                        ? "Close navigation menu"
+                        : "Open navigation menu"
+                );
+
+
+                mobileNav.classList.toggle(
+                    "open",
+                    nextState
+                );
+
+
+                mobileNav.setAttribute(
+                    "aria-hidden",
+                    String(!nextState)
+                );
+
+            }
+        );
+
+
+        mobileNav
+            .querySelectorAll("a")
+            .forEach(link => {
+
+                link.addEventListener(
+                    "click",
+                    () => {
+
+                        toggle.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+
+                        toggle.setAttribute(
+                            "aria-label",
+                            "Open navigation menu"
+                        );
+
+
+                        mobileNav.classList.remove(
+                            "open"
+                        );
+
+
+                        mobileNav.setAttribute(
+                            "aria-hidden",
+                            "true"
+                        );
+
+                    }
+                );
+
+            });
+
+
+        document.addEventListener(
+            "keydown",
+            event => {
+
+                if (event.key === "Escape") {
+
+                    toggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+
+                    toggle.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+
+                    mobileNav.classList.remove(
+                        "open"
+                    );
+
+
+                    mobileNav.setAttribute(
+                        "aria-hidden",
+                        "true"
+                    );
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /* =====================================================
+       LOADER
+    ====================================================== */
+
+    function initLoader() {
+
+        const percentEl =
+            document.getElementById(
+                "loader-percent"
+            );
+
+        const fillEl =
+            document.getElementById(
+                "loader-fill"
+            );
+
+
+        if (!percentEl || !fillEl) {
+
+            document.body.classList.remove(
+                "loading-lock"
+            );
+
+            document.body.classList.add(
+                "is-ready"
+            );
+
+            return;
+
+        }
+
+
+        let progress = 0;
+
+        const target = 100;
+
+
+        const tick =
+            window.setInterval(
+                () => {
+
+                    progress =
+                        Math.min(
+                            progress +
+                            Math.floor(
+                                Math.random() * 8
+                            ) +
+                            2,
+                            target
+                        );
+
+
+                    percentEl.textContent =
+                        progress + "%";
+
+
+                    fillEl.style.width =
+                        progress + "%";
+
+
+                    if (progress >= target) {
+
+                        window.clearInterval(
+                            tick
+                        );
+
+
+                        window.setTimeout(
+                            () => {
+
+                                document.body.classList.remove(
+                                    "loading-lock"
+                                );
+
+                                document.body.classList.add(
+                                    "is-ready"
+                                );
+
+                            },
+                            320
+                        );
+
+                    }
+
+                },
+                45
+            );
+
+
+        /* Safety fallback:
+           Prevents the loader from remaining forever
+           if something unexpected happens. */
+
+        window.setTimeout(
+            () => {
+
+                document.body.classList.remove(
+                    "loading-lock"
+                );
+
+                document.body.classList.add(
+                    "is-ready"
+                );
+
+            },
+            5000
+        );
+
+    }
+
+
+    /* =====================================================
+       INITIALIZE
+    ====================================================== */
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+
+            /*
+             * Initialize normal website features.
+             * Each function is protected independently
+             * so one small error cannot block the loader.
+             */
+
+            try {
+                initPromptBrowser();
+            } catch (error) {
+                console.error(
+                    "Prompt browser error:",
+                    error
+                );
+            }
+
+
+            try {
+                initServiceTabs();
+            } catch (error) {
+                console.error(
+                    "Service tabs error:",
+                    error
+                );
+            }
+
+
+            try {
+                initBackToTop();
+            } catch (error) {
+                console.error(
+                    "Back-to-top error:",
+                    error
+                );
+            }
+
+
+            try {
+                initMobileNavigation();
+            } catch (error) {
+                console.error(
+                    "Mobile navigation error:",
+                    error
+                );
+            }
+
+
+            /*
+             * Loader is ALWAYS initialized separately.
+             * This prevents the site from getting trapped
+             * behind the pre-loader.
+             */
+
+            try {
+                initLoader();
+            } catch (error) {
+
+                console.error(
+                    "Loader error:",
+                    error
+                );
+
+                document.body.classList.remove(
+                    "loading-lock"
+                );
+
+                document.body.classList.add(
+                    "is-ready"
+                );
+
+            }
+
+        }
+    );
+
+})();
+
+</script>
 
 
 </body>
 
 </html>
-
